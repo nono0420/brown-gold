@@ -6,6 +6,24 @@ html body {
     // position: relative;
     background: #391a00;
 
+    header {
+        width: 100%;
+        height: 120px;
+        background: rgb(128, 180, 189);
+
+        .header-top-bg {
+            width: 100%;
+            height: 55px;
+            background: wheat;
+        }
+
+        .header-2 {
+            width: 100%;
+            height: 65px;
+            background: yellowgreen;
+        }
+    }
+
     .bg {
         width: 100%;
         height: 100%;
