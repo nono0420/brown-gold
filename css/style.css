@@ -51,7 +51,7 @@ table {
 
 html body {
   width: 100%;
-  min-width: 1330px;
+  min-width: 1280px;
   height: 900px;
   font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
   background: #391a00;
@@ -61,7 +61,7 @@ html body header {
   height: 120px;
 }
 html body header article {
-  width: 1330px;
+  width: 1280px;
   height: 120px;
   margin: auto;
 }
