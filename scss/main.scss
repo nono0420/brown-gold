@@ -21,11 +21,46 @@ html body {
     
                 .header-top-bg {
                     width: 735px;
-                    height: 60px;
+                    height: 70px;
                     background: url(../img/header-1.png);
                     float: right;
                     background-size: 100%;
                     background-repeat: no-repeat;
+
+                    .input-box {
+                        width: 695px;
+                        height: 35px;
+                        margin: auto;
+                        transform: translateY(22%);
+
+                        input {
+                            width: 142px;
+                            height: 28px;
+                            border-radius: 20px;
+                            border: 1px solid #fff5af;
+                            outline: none;
+                            padding-left: 20px;
+                            margin-left: 3px;
+                        }
+
+                        button {
+                            width: 62px;
+                            height: 27px;
+                            background: linear-gradient(to bottom, #ffddff 0%, #f717ff 30%, #a000ce 55%, #a000ce 85%, #ffd6fc 100%);
+                            border-radius: 14px;
+                            border: 1px solid #dc3aff;
+                            color: #fff;
+                            font-size: 14px;
+                            outline: none;
+                            cursor: pointer;
+                            margin-left: 5px;
+
+                            &:hover,&:active,&.active {
+                                background: linear-gradient(to bottom, #e5ffe2 0%,#9aff48 12%,#3cd500 33%,#0f8100 89%,#f9ffdb 100%);
+                                border: 1px solid #d8ff94;
+                            }
+                        }
+                    }
                 }
             }
     
