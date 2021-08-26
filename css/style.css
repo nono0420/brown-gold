@@ -224,9 +224,12 @@ html body header article .header-2 ul li {
   height: 65px;
   text-align: center;
   line-height: 65px;
+}
+html body header article .header-2 ul li a {
   font-size: 18px;
   color: #fff6b6;
   font-weight: bold;
+  text-decoration: none;
 }
 html body .bg {
   width: 100%;

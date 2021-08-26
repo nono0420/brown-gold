@@ -180,10 +180,13 @@ html body {
                         // background: rosybrown;
                         text-align: center;
                         line-height: 65px;
-                        font-size: 18px;
-                        color: #fff6b6;
-                        font-weight: bold;
                         
+                        a {
+                            font-size: 18px;
+                            color: #fff6b6;
+                            font-weight: bold;
+                            text-decoration: none;
+                        }
                     }
                 }
             }
