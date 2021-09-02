@@ -261,6 +261,7 @@ html body main .banner {
   width: 100%;
   height: auto;
   overflow: hidden;
+  background: #000;
 }
 html body main .banner .swiper-container {
   width: 100%;
@@ -298,7 +299,8 @@ html body main .banner .swiper-slide.img-3 {
   background-size: 100%;
 }
 html body main .banner .swiper-pagination {
-  bottom: 18px;
+  bottom: 34px;
+  position: relative;
 }
 html body main .banner .swiper-pagination .swiper-pagination-bullet {
   width: 16px;
@@ -310,6 +312,57 @@ html body main .banner .swiper-pagination .swiper-pagination-bullet {
 }
 html body main .banner .swiper-pagination .swiper-pagination-bullet-active {
   background: #fff9d2;
+}
+html body main article {
+  width: 1280px;
+  height: auto;
+  margin: auto;
+}
+html body main article .news {
+  width: 1100px;
+  height: 35px;
+  margin: auto;
+  margin-top: -12px;
+}
+html body main article .news .news-icon {
+  width: 45px;
+  height: 35px;
+  float: left;
+  background: url(../img/news-icon.png) no-repeat;
+  background-size: contain;
+}
+html body main article .news .news-box {
+  width: 1050px;
+  height: 33px;
+  background: #000000b8;
+  border-radius: 5px;
+  border: 1px solid #fff6b6;
+  float: right;
+}
+html body main article .news .news-box marquee {
+  width: 1035px;
+  color: #fff6b6;
+  line-height: 35px;
+  float: right;
+}
+html body main article .main-box {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  background: rosybrown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+html body main article .main-box .main-btn {
+  width: 223px;
+  height: 517px;
+  background: url(../img/main-btn.png) no-repeat;
+  background-size: 100%;
 }
 html body .bg {
   width: 100%;
