@@ -355,6 +355,7 @@ html body main article .main-box {
       flex-wrap: nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: relative;
 }
 @media (max-width: 1300px) {
   html body main article .main-box {
@@ -368,6 +369,7 @@ html body main article .main-box .main-btn {
   height: 517px;
   background: url(../img/main-btn.png) no-repeat;
   background-size: 100%;
+  position: relative;
 }
 @media (max-width: 1280px) {
   html body main article .main-box .main-btn {
@@ -375,29 +377,13 @@ html body main article .main-box .main-btn {
     height: 500px;
   }
 }
-html body main article .main-box .main-btn div {
-  width: 130px;
-  height: 75px;
-  background: coral;
-  position: absolute;
-  margin: 60px 0 0px 45px;
-}
-html body main article .main-box .main-btn div h1 {
-  font-size: 25px;
-  letter-spacing: 5px;
-  color: #39301b;
-}
-html body main article .main-box .main-btn div h2 {
-  font-size: 25px;
-  letter-spacing: 4px;
-  color: #39301b;
-}
 html body main article .main-box .main-btn .img {
   width: 223px;
   height: 341px;
   background: url(../img/main-btn-img.png) no-repeat;
   margin: 154px 0px 0 0px;
   padding-left: 16px;
+  position: relative;
 }
 html body main article .main-box .main-btn .img-1 {
   background-position-x: calc(100% + 1098px);
@@ -417,12 +403,31 @@ html body main article .main-box .main-btn .img-5 {
 html body main article .main-box .main-btn .img-6 {
   background-position-x: calc(100% - 30px);
 }
+html body main article .main-box .main-btn div {
+  width: 130px;
+  height: 75px;
+  position: relative;
+  margin: -425px 0 0px 43px;
+}
+html body main article .main-box .main-btn div h1 {
+  font-size: 28px;
+  text-shadow: 2px 1px 0px #faf0a2;
+  color: #39301b;
+  font-weight: bold;
+}
+html body main article .main-box .main-btn div h2 {
+  font-size: 28px;
+  text-shadow: 2px 1px 0px #faf0a2;
+  letter-spacing: 4px;
+  color: #39301b;
+  font-weight: bold;
+}
 html body main article .main-box .main-btn p {
   color: #ffffbc;
   font-size: 30px;
+  font-weight: bold;
   text-align: center;
-  line-height: 0;
-  margin-top: -56px;
+  padding-top: -10px;
 }
 html body .bg {
   width: 100%;

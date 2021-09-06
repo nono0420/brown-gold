@@ -325,6 +325,7 @@ html body {
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: space-around;
+                position: relative;
 
                 @media(max-width:1300px) {
                     width: 86%;
@@ -337,30 +338,11 @@ html body {
                     height: 517px;
                     background: url(../img/main-btn.png) no-repeat;
                     background-size: 100%;
+                    position: relative;
 
                     @media(max-width:1280px) {
                         width: 200px;
                         height: 500px;
-                    }
-
-                    div {
-                        width: 130px;
-                        height: 75px;
-                        background: coral;
-                        position: absolute;
-                        margin: 60px 0 0px 45px;
-
-                        h1 {
-                            font-size: 25px;
-                            letter-spacing: 5px;
-                            color: #39301b;
-                        }
-
-                        h2 {
-                            font-size: 25px;
-                            letter-spacing: 4px;
-                            color: #39301b;
-                        }
                     }
 
                     .img {
@@ -369,6 +351,7 @@ html body {
                         background: url(../img/main-btn-img.png) no-repeat;
                         margin: 154px 0px 0 0px;
                         padding-left: 16px;
+                        position: relative;
                     }
 
                     .img-1 {
@@ -395,12 +378,34 @@ html body {
                         background-position-x: calc(100% - 30px);
                     }
 
+                     div {
+                        width: 130px;
+                        height: 75px;
+                        position: relative;
+                        margin: -425px 0 0px 43px;
+
+                        h1 {
+                            font-size: 28px;
+                            text-shadow: 2px 1px 0px #faf0a2;
+                            color: #39301b;
+                            font-weight: bold;
+                        }
+
+                        h2 {
+                            font-size: 28px;
+                            text-shadow: 2px 1px 0px #faf0a2;
+                            letter-spacing: 4px;
+                            color: #39301b;
+                            font-weight: bold;
+                        }
+                    }
+
                     p {
                         color: #ffffbc;
                         font-size: 30px;
+                        font-weight: bold;
                         text-align: center;
-                        line-height: 0;
-                        margin-top: -56px;
+                        padding-top: -10px;
                     }
                 }
             }
