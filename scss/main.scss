@@ -339,6 +339,7 @@ html body {
                     background: url(../img/main-btn.png) no-repeat;
                     background-size: 100%;
                     position: relative;
+                    cursor: pointer;
 
                     @media(max-width:1280px) {
                         width: 200px;
@@ -359,7 +360,7 @@ html body {
                     }
 
                     .img-2 {
-                        background-position-x: calc(100% + 874px);
+                        background-position-x: calc(100% + 873px);
                     }
 
                     .img-3 {
@@ -382,7 +383,7 @@ html body {
                         width: 130px;
                         height: 75px;
                         position: relative;
-                        margin: -425px 0 0px 43px;
+                        margin: -430px 0 0px 35px;
 
                         h1 {
                             font-size: 28px;
@@ -403,9 +404,15 @@ html body {
                     p {
                         color: #ffffbc;
                         font-size: 30px;
-                        font-weight: bold;
+                        position: relative;
+                        margin-top: 289px;
                         text-align: center;
-                        padding-top: -10px;
+                    }
+
+                    &:hover,&:active,&.active {
+                        h1 {
+                            color: #e40a91;
+                        }
                     }
                 }
             }
