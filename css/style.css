@@ -261,7 +261,6 @@ html body main .banner {
   width: 100%;
   height: auto;
   overflow: hidden;
-  background: #000;
 }
 html body main .banner .swiper-container {
   width: 100%;
@@ -319,7 +318,7 @@ html body main article {
   margin: auto;
 }
 html body main article .news {
-  width: 1100px;
+  width: 1280px;
   height: 35px;
   margin: auto;
   margin-top: -12px;
@@ -332,7 +331,7 @@ html body main article .news .news-icon {
   background-size: contain;
 }
 html body main article .news .news-box {
-  width: 1050px;
+  width: 1225px;
   height: 33px;
   background: #000000b8;
   border-radius: 5px;
@@ -349,7 +348,6 @@ html body main article .main-box {
   width: 100%;
   height: auto;
   margin-top: 20px;
-  background: rosybrown;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,11 +356,73 @@ html body main article .main-box {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+@media (max-width: 1300px) {
+  html body main article .main-box {
+    width: 86%;
+    height: auto;
+    margin: auto;
+  }
+}
 html body main article .main-box .main-btn {
   width: 223px;
   height: 517px;
   background: url(../img/main-btn.png) no-repeat;
   background-size: 100%;
+}
+@media (max-width: 1280px) {
+  html body main article .main-box .main-btn {
+    width: 200px;
+    height: 500px;
+  }
+}
+html body main article .main-box .main-btn div {
+  width: 130px;
+  height: 75px;
+  background: coral;
+  position: absolute;
+  margin: 60px 0 0px 45px;
+}
+html body main article .main-box .main-btn div h1 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  color: #39301b;
+}
+html body main article .main-box .main-btn div h2 {
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: #39301b;
+}
+html body main article .main-box .main-btn .img {
+  width: 223px;
+  height: 341px;
+  background: url(../img/main-btn-img.png) no-repeat;
+  margin: 154px 0px 0 0px;
+  padding-left: 16px;
+}
+html body main article .main-box .main-btn .img-1 {
+  background-position-x: calc(100% + 1098px);
+}
+html body main article .main-box .main-btn .img-2 {
+  background-position-x: calc(100% + 874px);
+}
+html body main article .main-box .main-btn .img-3 {
+  background-position-x: calc(100% + 647px);
+}
+html body main article .main-box .main-btn .img-4 {
+  background-position-x: calc(100% + 422px);
+}
+html body main article .main-box .main-btn .img-5 {
+  background-position-x: calc(100% + 195px);
+}
+html body main article .main-box .main-btn .img-6 {
+  background-position-x: calc(100% - 30px);
+}
+html body main article .main-box .main-btn p {
+  color: #ffffbc;
+  font-size: 30px;
+  text-align: center;
+  line-height: 0;
+  margin-top: -56px;
 }
 html body .bg {
   width: 100%;
