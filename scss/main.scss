@@ -294,7 +294,7 @@ html body {
 
                 .news-icon {
                     width: 45px;
-                    height: 35px;
+                    height: 45px;
                     float: left;
                     background: url(../img/news-icon.png) no-repeat;
                     background-size: contain;
@@ -384,7 +384,7 @@ html body {
                         width: 130px;
                         height: 75px;
                         position: relative;
-                        margin: -430px 0 0px 35px;
+                        margin: -430px 0 0px 45px;
 
                         h1 {
                             font-size: 28px;
@@ -445,6 +445,7 @@ html body {
                     display: flex;
                     justify-content: space-around;
                     float: left;
+                    cursor: pointer;
 
                     li {
                         width: 100%;
@@ -453,6 +454,31 @@ html body {
                         text-align: center;
                         line-height: 51px;
                         color: #361e00;
+                        cursor: pointer;
+                        overflow:hidden;
+                        position: relative;
+                        transition: 0.3s;
+
+                        &:after {
+                            position: absolute;
+                            transition: 0.3s;
+                            content: '';
+                            width: 33%;
+                            right: auto;
+                            left: 35%;
+                            bottom: 0;
+                            height: 1px;
+                            background: #2e2902;
+                          }
+    
+                          &:hover,&:active,&.active{
+    
+                            &:after {
+                               width: 100%;
+                               right: 100%;
+                               left: 0;
+                            }
+                          }
                     }
                 }
 
@@ -476,18 +502,25 @@ html body {
 
             .footer-2box {
                 width: 1000px;
-                height: 100px;
-                background: chocolate;
+                height: 70px;
                 margin: auto;
+                top: 50%;
+                transform: translateY(50%);
+                
 
                 h1 {
                     text-align: center;
-                    font-size: 16px;
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                    color: #e5ce68;
                 }
 
                 h2 {
                     text-align: center;
-                    font-size: 16px;
+                    font-size: 15px;
+                    color: #e5ce68;
+                    letter-spacing: 1px;
+                    padding-top: 17px;
                 }
             }
         }

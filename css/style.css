@@ -325,7 +325,7 @@ html body main article .news {
 }
 html body main article .news .news-icon {
   width: 45px;
-  height: 35px;
+  height: 45px;
   float: left;
   background: url(../img/news-icon.png) no-repeat;
   background-size: contain;
@@ -409,7 +409,7 @@ html body main article .main-box .main-btn div {
   width: 130px;
   height: 75px;
   position: relative;
-  margin: -430px 0 0px 35px;
+  margin: -430px 0 0px 45px;
 }
 html body main article .main-box .main-btn div h1 {
   font-size: 28px;
@@ -463,6 +463,7 @@ html body footer .footer-1 article ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   float: left;
+  cursor: pointer;
 }
 html body footer .footer-1 article ul li {
   width: 100%;
@@ -471,6 +472,28 @@ html body footer .footer-1 article ul li {
   text-align: center;
   line-height: 51px;
   color: #361e00;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html body footer .footer-1 article ul li:after {
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  content: "";
+  width: 33%;
+  right: auto;
+  left: 35%;
+  bottom: 0;
+  height: 1px;
+  background: #2e2902;
+}
+html body footer .footer-1 article ul li:hover:after, html body footer .footer-1 article ul li:active:after, html body footer .footer-1 article ul li.active:after {
+  width: 100%;
+  right: 100%;
+  left: 0;
 }
 html body footer .footer-1 article div {
   width: 270px;
@@ -489,17 +512,24 @@ html body footer .footer-2 {
 }
 html body footer .footer-2 .footer-2box {
   width: 1000px;
-  height: 100px;
-  background: chocolate;
+  height: 70px;
   margin: auto;
+  top: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 html body footer .footer-2 .footer-2box h1 {
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #e5ce68;
 }
 html body footer .footer-2 .footer-2box h2 {
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
+  color: #e5ce68;
+  letter-spacing: 1px;
+  padding-top: 17px;
 }
 html body .bg {
   width: 100%;
