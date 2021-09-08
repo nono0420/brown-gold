@@ -342,6 +342,11 @@ html body {
                     position: relative;
                     cursor: pointer;
 
+                    &:hover,&:active,&.active {
+                        transform: scale(1.1);
+                        filter: brightness(1.1);
+                    }
+
                     @media(max-width:1280px) {
                         width: 200px;
                         height: 500px;
@@ -413,11 +418,11 @@ html body {
 
                     &:hover,&:active,&.active {
                         h1 {
-                            color: #847521;
+                            color: #c80aea;
                         }
 
                         h2 {
-                            color:#847521;
+                            color:#c80aea;
                         }
                     }
                 }
@@ -539,6 +544,7 @@ html body {
             height: 147px;
             background: url(../img/抽獎贏大禮.png) no-repeat;
             background-size: contain;
+            transition: 0.3s;
         }
 
         .gift-text {
@@ -548,7 +554,100 @@ html body {
             text-align: center;
             margin-top: -10px;
         }
+
+        &:hover {
+            .gift-img {
+                transform: rotate(20deg);
+            }
+        }
     } 
+
+    .left {
+        width: 100px;
+        height: 200px;
+        position: fixed;
+        top: 210px;
+        left: 25px;
+        z-index: 999;
+
+        .left-circle {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid #fff6ab;
+            background: linear-gradient(60deg, #ffffff 10%,#ffed8a 30%,#725208 95%,#7b5a33 90%);
+            cursor: pointer;
+            box-shadow: 0px 1px 7px #fff5ce;
+    
+            &:hover,&:active,&.active {
+                background: linear-gradient(6deg, #ffffff 1%, #e2d5b5 30%, #ffed8a 85%, #ffed8a 85%, #ffffff 100%);
+                .left-box {
+                    display: block;
+                    pointer-events: visible;
+                }
+            }
+    
+            .left-img {
+                width: 15px;
+                height: 27px;
+                background: url(../img/left-phone.png) no-repeat;
+                margin: auto;
+                margin-top: 10px;
+            }
+    
+            .left-text {
+                width: 80px;
+                padding-top: 23px;
+                color: #f4f4b3;
+                font-size: 14px;
+            }
+    
+            .left-box {
+                width: 100px;
+                height: 135px;
+                margin-top: 10px;
+                background: #fff;
+                // display: none;
+                pointer-events: none;
+    
+                .left-box1 {
+                    width: 99px;
+                    height: 38px;
+                    background: linear-gradient(to top, #2e1a00 16%,#ffe06e 87%);
+                    border-radius: 10px;
+                    border: 1px solid #fffcad;
+                    margin-top: 5px;
+                    cursor: pointer;
+    
+                    &:hover,&:active,&.active {
+                        background: linear-gradient(to bottom, #2e1a00 16%,#ffe06e 87%);
+                    }
+    
+                    .left-icon {
+                        width: 16px;
+                        height: 29px;
+                        background: url(../img/left-phone-2.png) no-repeat;
+                        margin: 3px 0 0 8px;
+                    }
+    
+                    .text {
+                        width: 75px;
+                        height: 38px;
+                        color: #feffea;
+                        margin: -20px 0 0 29px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        // &:hover,&:active,&.active {
+        //     .left-box {
+        //         display: block;
+        //         pointer-events: visible;
+        //     }
+        // }
+    }
 
     .right-box {
         width: 48px;
@@ -597,6 +696,34 @@ html body {
                 margin: auto;
                 margin-top: 10px;
             }
+        }
+    }
+
+    .top {
+        width: 56px;
+        height: 120px;
+        position: fixed;
+        bottom: 190px;
+        right: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover,&:active,&.active {
+            bottom: 220px;
+        }
+
+        .top-img {
+            width: 56px;
+            height: 101px;
+            background: url(../img/top.png) no-repeat;
+            background-size: contain;
+        }
+
+        .top-text {
+            width: 100%;
+            text-align: center;
+            color: #fffcad;
+            padding-top: 5px;
         }
     }
 

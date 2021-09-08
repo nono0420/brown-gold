@@ -373,6 +373,12 @@ html body main article .main-box .main-btn {
   position: relative;
   cursor: pointer;
 }
+html body main article .main-box .main-btn:hover, html body main article .main-box .main-btn:active, html body main article .main-box .main-btn.active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
 @media (max-width: 1280px) {
   html body main article .main-box .main-btn {
     width: 200px;
@@ -435,10 +441,10 @@ html body main article .main-box .main-btn p {
   text-align: center;
 }
 html body main article .main-box .main-btn:hover h1, html body main article .main-box .main-btn:active h1, html body main article .main-box .main-btn.active h1 {
-  color: #847521;
+  color: #c80aea;
 }
 html body main article .main-box .main-btn:hover h2, html body main article .main-box .main-btn:active h2, html body main article .main-box .main-btn.active h2 {
-  color: #847521;
+  color: #c80aea;
 }
 html body footer {
   width: 100%;
@@ -543,6 +549,8 @@ html body .gift .gift-img {
   height: 147px;
   background: url(../img/抽獎贏大禮.png) no-repeat;
   background-size: contain;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 html body .gift .gift-text {
   font-size: 20px;
@@ -550,6 +558,82 @@ html body .gift .gift-text {
   color: #ffffd9;
   text-align: center;
   margin-top: -10px;
+}
+html body .gift:hover .gift-img {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+html body .left {
+  width: 100px;
+  height: 200px;
+  position: fixed;
+  top: 210px;
+  left: 25px;
+  z-index: 999;
+}
+html body .left .left-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #fff6ab;
+  background: linear-gradient(60deg, #ffffff 10%, #ffed8a 30%, #725208 95%, #7b5a33 90%);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 7px #fff5ce;
+          box-shadow: 0px 1px 7px #fff5ce;
+}
+html body .left .left-circle:hover, html body .left .left-circle:active, html body .left .left-circle.active {
+  background: linear-gradient(6deg, #ffffff 1%, #e2d5b5 30%, #ffed8a 85%, #ffed8a 85%, #ffffff 100%);
+}
+html body .left .left-circle:hover .left-box, html body .left .left-circle:active .left-box, html body .left .left-circle.active .left-box {
+  display: block;
+  pointer-events: visible;
+}
+html body .left .left-circle .left-img {
+  width: 15px;
+  height: 27px;
+  background: url(../img/left-phone.png) no-repeat;
+  margin: auto;
+  margin-top: 10px;
+}
+html body .left .left-circle .left-text {
+  width: 80px;
+  padding-top: 23px;
+  color: #f4f4b3;
+  font-size: 14px;
+}
+html body .left .left-circle .left-box {
+  width: 100px;
+  height: 135px;
+  margin-top: 10px;
+  background: #fff;
+  pointer-events: none;
+}
+html body .left .left-circle .left-box .left-box1 {
+  width: 99px;
+  height: 38px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, #2e1a00), color-stop(87%, #ffe06e));
+  background: linear-gradient(to top, #2e1a00 16%, #ffe06e 87%);
+  border-radius: 10px;
+  border: 1px solid #fffcad;
+  margin-top: 5px;
+  cursor: pointer;
+}
+html body .left .left-circle .left-box .left-box1:hover, html body .left .left-circle .left-box .left-box1:active, html body .left .left-circle .left-box .left-box1.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16%, #2e1a00), color-stop(87%, #ffe06e));
+  background: linear-gradient(to bottom, #2e1a00 16%, #ffe06e 87%);
+}
+html body .left .left-circle .left-box .left-box1 .left-icon {
+  width: 16px;
+  height: 29px;
+  background: url(../img/left-phone-2.png) no-repeat;
+  margin: 3px 0 0 8px;
+}
+html body .left .left-circle .left-box .left-box1 .text {
+  width: 75px;
+  height: 38px;
+  color: #feffea;
+  margin: -20px 0 0 29px;
+  font-size: 14px;
 }
 html body .right-box {
   width: 48px;
@@ -595,6 +679,31 @@ html body .right-box .right-circle .cell-img {
   background-position-y: calc(100% + 0px);
   margin: auto;
   margin-top: 10px;
+}
+html body .top {
+  width: 56px;
+  height: 120px;
+  position: fixed;
+  bottom: 190px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+html body .top:hover, html body .top:active, html body .top.active {
+  bottom: 220px;
+}
+html body .top .top-img {
+  width: 56px;
+  height: 101px;
+  background: url(../img/top.png) no-repeat;
+  background-size: contain;
+}
+html body .top .top-text {
+  width: 100%;
+  text-align: center;
+  color: #fffcad;
+  padding-top: 5px;
 }
 html body .bg {
   width: 100%;
