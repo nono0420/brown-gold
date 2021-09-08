@@ -569,6 +569,7 @@ html body {
         top: 210px;
         left: 25px;
         z-index: 999;
+        transition: 0.3s;
 
         .left-circle {
             width: 45px;
@@ -582,21 +583,10 @@ html body {
     
             &:hover,&:active,&.active {
                 background: linear-gradient(6deg, #ffffff 1%, #e2d5b5 30%, #ffed8a 85%, #ffed8a 85%, #ffffff 100%);
+
                 .left-box {
                     display: block;
                     pointer-events: visible;
-
-                    .box1-1 {
-                        top: 50px;
-                    }
-
-                    .box1-2 {
-                        top: 200px;
-                    }
-
-                    .box1-3 {
-                        top: 300px;
-                    }
                 }
             }
     
@@ -624,7 +614,10 @@ html body {
                 pointer-events: none;
                 position: absolute;
     
-                .left-box1 {
+                .left-box1,
+                .left-box2,
+                .left-box3
+                 {
                     width: 99px;
                     height: 38px;
                     background: linear-gradient(to top, #2e1a00 16%,#ffe06e 87%);
@@ -653,15 +646,20 @@ html body {
                         line-height: 10px;
                     }
                 }
+
+                .left-box1{
+                    top: 76px;
+                }
+
+                .left-box2{
+                    top: 16px;
+                }
+
+                .left-box3 {
+                    top: -36px;
+                }
             }
         }
-
-        // &:hover,&:active,&.active {
-        //     .left-box {
-        //         display: block;
-        //         pointer-events: visible;
-        //     }
-        // }
     }
 
     .right-box {

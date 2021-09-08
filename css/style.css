@@ -570,6 +570,8 @@ html body .left {
   top: 210px;
   left: 25px;
   z-index: 999;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 html body .left .left-circle {
   width: 45px;
@@ -587,15 +589,6 @@ html body .left .left-circle:hover, html body .left .left-circle:active, html bo
 html body .left .left-circle:hover .left-box, html body .left .left-circle:active .left-box, html body .left .left-circle.active .left-box {
   display: block;
   pointer-events: visible;
-}
-html body .left .left-circle:hover .left-box .box1-1, html body .left .left-circle:active .left-box .box1-1, html body .left .left-circle.active .left-box .box1-1 {
-  top: 50px;
-}
-html body .left .left-circle:hover .left-box .box1-2, html body .left .left-circle:active .left-box .box1-2, html body .left .left-circle.active .left-box .box1-2 {
-  top: 200px;
-}
-html body .left .left-circle:hover .left-box .box1-3, html body .left .left-circle:active .left-box .box1-3, html body .left .left-circle.active .left-box .box1-3 {
-  top: 300px;
 }
 html body .left .left-circle .left-img {
   width: 15px;
@@ -619,7 +612,9 @@ html body .left .left-circle .left-box {
   pointer-events: none;
   position: absolute;
 }
-html body .left .left-circle .left-box .left-box1 {
+html body .left .left-circle .left-box .left-box1,
+html body .left .left-circle .left-box .left-box2,
+html body .left .left-circle .left-box .left-box3 {
   width: 99px;
   height: 38px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, #2e1a00), color-stop(87%, #ffe06e));
@@ -629,23 +624,42 @@ html body .left .left-circle .left-box .left-box1 {
   margin-top: 9px;
   cursor: pointer;
 }
-html body .left .left-circle .left-box .left-box1:hover, html body .left .left-circle .left-box .left-box1:active, html body .left .left-circle .left-box .left-box1.active {
+html body .left .left-circle .left-box .left-box1:hover, html body .left .left-circle .left-box .left-box1:active, html body .left .left-circle .left-box .left-box1.active,
+html body .left .left-circle .left-box .left-box2:hover,
+html body .left .left-circle .left-box .left-box2:active,
+html body .left .left-circle .left-box .left-box2.active,
+html body .left .left-circle .left-box .left-box3:hover,
+html body .left .left-circle .left-box .left-box3:active,
+html body .left .left-circle .left-box .left-box3.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(16%, #2e1a00), color-stop(87%, #ffe06e));
   background: linear-gradient(to bottom, #2e1a00 16%, #ffe06e 87%);
 }
-html body .left .left-circle .left-box .left-box1 .left-icon {
+html body .left .left-circle .left-box .left-box1 .left-icon,
+html body .left .left-circle .left-box .left-box2 .left-icon,
+html body .left .left-circle .left-box .left-box3 .left-icon {
   width: 16px;
   height: 29px;
   background: url(../img/left-phone-2.png) no-repeat;
   margin: 3px 0 0 8px;
 }
-html body .left .left-circle .left-box .left-box1 .text {
+html body .left .left-circle .left-box .left-box1 .text,
+html body .left .left-circle .left-box .left-box2 .text,
+html body .left .left-circle .left-box .left-box3 .text {
   width: 75px;
   height: 38px;
   color: #feffea;
   margin: -20px 0 0 29px;
   font-size: 14px;
   line-height: 10px;
+}
+html body .left .left-circle .left-box .left-box1 {
+  top: 76px;
+}
+html body .left .left-circle .left-box .left-box2 {
+  top: 16px;
+}
+html body .left .left-circle .left-box .left-box3 {
+  top: -36px;
 }
 html body .right-box {
   width: 48px;
