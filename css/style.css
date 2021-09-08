@@ -565,7 +565,7 @@ html body .gift:hover .gift-img {
 }
 html body .left {
   width: 100px;
-  height: 200px;
+  height: 50px;
   position: fixed;
   top: 210px;
   left: 25px;
@@ -588,6 +588,15 @@ html body .left .left-circle:hover .left-box, html body .left .left-circle:activ
   display: block;
   pointer-events: visible;
 }
+html body .left .left-circle:hover .left-box .box1-1, html body .left .left-circle:active .left-box .box1-1, html body .left .left-circle.active .left-box .box1-1 {
+  top: 50px;
+}
+html body .left .left-circle:hover .left-box .box1-2, html body .left .left-circle:active .left-box .box1-2, html body .left .left-circle.active .left-box .box1-2 {
+  top: 200px;
+}
+html body .left .left-circle:hover .left-box .box1-3, html body .left .left-circle:active .left-box .box1-3, html body .left .left-circle.active .left-box .box1-3 {
+  top: 300px;
+}
 html body .left .left-circle .left-img {
   width: 15px;
   height: 27px;
@@ -598,15 +607,17 @@ html body .left .left-circle .left-img {
 html body .left .left-circle .left-text {
   width: 80px;
   padding-top: 23px;
+  padding-bottom: 8px;
   color: #f4f4b3;
   font-size: 14px;
 }
 html body .left .left-circle .left-box {
   width: 100px;
-  height: 135px;
-  margin-top: 10px;
-  background: #fff;
+  height: 150px;
+  margin-top: -7px;
+  display: none;
   pointer-events: none;
+  position: absolute;
 }
 html body .left .left-circle .left-box .left-box1 {
   width: 99px;
@@ -615,7 +626,7 @@ html body .left .left-circle .left-box .left-box1 {
   background: linear-gradient(to top, #2e1a00 16%, #ffe06e 87%);
   border-radius: 10px;
   border: 1px solid #fffcad;
-  margin-top: 5px;
+  margin-top: 9px;
   cursor: pointer;
 }
 html body .left .left-circle .left-box .left-box1:hover, html body .left .left-circle .left-box .left-box1:active, html body .left .left-circle .left-box .left-box1.active {
@@ -634,6 +645,7 @@ html body .left .left-circle .left-box .left-box1 .text {
   color: #feffea;
   margin: -20px 0 0 29px;
   font-size: 14px;
+  line-height: 10px;
 }
 html body .right-box {
   width: 48px;
