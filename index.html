@@ -16,7 +16,38 @@
         <div class="register-box">
             <div class="close"></div>
             <div class="register-top">註冊</div>
-            <div class="register-main"></div>
+            <div class="register-main">
+                <div class="register-main-left">
+                    <input type="text"placeholder="真實姓名">
+                    <input type="text"placeholder="請輸入帳號">
+                    <input type="password" placeholder="請輸入密碼">
+                    <input type="password" placeholder="確認密碼">
+                    <h1>帳號須包含一個英文字母(含大小寫)</h1>
+                    <h2>數字英文,及限定的特殊符號(@#$%^&_)可使用</h2>
+                </div>
+                <div class="register-main-right">
+                    <input type="text"placeholder="手機號碼">
+                    <input type="text"placeholder="手機驗證碼">
+                    <input type="text"placeholder="邀請碼">
+                    <button>取得驗證碼</button>
+                    <div class="check-box">
+                        <label class="check">
+                            <input type="checkbox" value="like">
+                            <i></i>
+                        </label>
+                        <p> 相關條款與隱私政策</p>
+                        <h3>已閱讀並同意 </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="register-button">
+                <div class="button-left">
+                    <button>先去逛逛</button>
+                </div>
+                <div class="button-right">
+                    <button>註冊</button>
+                </div>
+            </div>
         </div>
     </div>
     <header>
@@ -231,5 +262,21 @@
            },
        });
    </script>
+
+<script>
+    $(function(){
+        $('.registered').click(function(){
+            $('.register').addClass('display');
+        })
+    })
+</script>
+
+<script>
+     $(function(){
+        $('.close').click(function(){
+            $('.register').removeClass('display');
+        })
+    })
+</script>
 </body>
 </html>

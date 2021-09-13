@@ -12,6 +12,11 @@ html body {
         background: #00000066;
         z-index: 999;
         position: absolute;
+        display: none;
+
+        &.display {
+            display: block;
+        }
 
         .close {
             width: 62px;
@@ -19,8 +24,7 @@ html body {
             background: url(../img/close.png) no-repeat;
             background-size: 100%;
             position: absolute;
-            top: 118px;
-            right: 460px;
+            margin: -37px 0 0 861px;
             transition: 0.3s;
             cursor: pointer;
 
@@ -53,6 +57,201 @@ html body {
                 text-align: center;
                 line-height: 87px;
             }
+
+            .register-main {
+                width: 82%;
+                height: 300px;
+                margin: auto;
+                margin-top: 6px;
+
+                .register-main-left {
+                    width: 50%;
+                    height: 300px;
+                    float: left;
+
+                    input {
+                        width: 305px;
+                        height: 44px;
+                        border-radius: 5px;
+                        padding-left: 15px;
+                        font-size: 18px;
+                        color: #351f01;
+                        border: 1px solid #2d1a00;
+                        outline: none;
+                        margin-top: 20px;
+                    }
+
+                    input::-webkit-input-placeholder {
+                        color: #351f01;
+                        font-size: 18px;
+                        // font-weight: bold;
+                    }
+
+                    h1 {
+                        top: 416px;
+                        position: absolute;
+                        color: #fff0a0;
+                        font-size: 14px;
+                    }
+
+                    h2 {
+                        top: 484px;
+                        position: absolute;
+                        color: #fff0a0;
+                        font-size: 14px;
+                    }
+                }
+
+                .register-main-right {
+                    width: 50%;
+                    height: 300px;
+                    float: right;
+
+                    input {
+                        width: 305px;
+                        height: 44px;
+                        border-radius: 5px;
+                        padding-left: 15px;
+                        font-size: 18px;
+                        color: #351f01;
+                        border: 1px solid #2d1a00;
+                        outline: none;
+                        margin-top: 20px;
+                        float: right;
+                    }
+
+                    input::-webkit-input-placeholder {
+                        color: #351f01;
+                        font-size: 18px;
+                        // font-weight: bold;
+                    }
+
+                    button {
+                        width: 120px;
+                        height: 33px;
+                        border: 1px solid #694c26;
+                        border-radius: 5px;
+                        background: linear-gradient(to left,#e9c464 0%,#ffef95 100%);
+                        font-size: 15px;
+                        color: #674208;
+                        font-weight: bold;
+                        position: relative;
+                        float: right;
+                        top: -108px;
+                        left: -8px;
+                        cursor: pointer;
+                    }
+
+                    .check-box {
+                        width: 320px;
+                        height: auto;
+                        // background: mediumaquamarine;
+                        top: 5px;
+                        float: right;
+                        position: relative;
+
+                        .check {
+                            position: relative;
+                            display: inline-block;
+                            width: 22px;
+                            height: 22px;
+                            background: #fff;
+                            border-radius: 2px;
+                            cursor: pointer;
+                        }
+                        input[type="checkbox"] {
+                            opacity: 0;
+                        }
+                        input[type="checkbox"]:checked + i{
+                            width: 22px;
+                            height: 22px;
+                            display: inline-block;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            background-color: #fff;
+                        }
+                        input[type="checkbox"]:checked + i:after {
+                            content: '';
+                            display: inline-block;
+                            width: 6px;
+                            height: 13px;
+                            border-top: 4px solid #703600;
+                            border-left: 4px solid #703600;
+                            transform: rotate(230deg);
+                            position: absolute;
+                            left: 6px;
+                            top: 1px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                        color: #fff;
+                        float: right;
+                        margin-top: 3px;
+                        margin-right: 11px;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        color: #fff;
+                        float: right;
+                        margin-top: 3px;
+                        margin-right: 2px;
+                        font-weight: bold;
+                        color: #f4df75;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .register-button {
+                width: 82%;
+                height: 90px;
+                border-radius: 15px;
+                margin: auto;
+
+                .button-left {
+                    width: 50%;
+                    height: 100%;
+                    float: left;
+
+                    button {
+                        width: 320px;
+                        height: 56px;
+                        background: url(../img/register-button.png) no-repeat;
+                        outline: none;
+                        border: none;
+                        font-size: 22px;
+                        color: #454444;
+                        font-weight: bold;
+                        cursor: pointer;
+                        float: left;
+                    }
+                }
+
+                .button-right {
+                    width: 50%;
+                    height: 100%;
+                    float: left;
+
+                    button {
+                        width: 320px;
+                        height: 56px;
+                        background: url(../img/register-button.png) no-repeat;
+                        background-position: calc(100% + 2px);
+                        outline: none;
+                        border: none;
+                        font-size: 22px;
+                        color: #454444;
+                        font-weight: bold;
+                        cursor: pointer;
+                        float: right;
+                    }
+                }
+            }
         }
     }
 
@@ -62,6 +261,7 @@ html body {
 
         article {
             width: 1280px;
+            // min-width: 1200px;
             height: 120px;
             margin: auto;
 
@@ -137,6 +337,12 @@ html body {
                                 background: linear-gradient(to bottom, #e5ffe2 0%, #9aff48 5%, #3cd500 30%, #0f8100 88%, #f9ffdb 100%);
                                 border: 1px solid #d8ff94;
                             }
+
+                            // .registered {
+                            //     &.display {
+                            //         display: block;
+                            //     }
+                            // }
                         }
 
                         .forget {
@@ -205,6 +411,10 @@ html body {
                     width: 150px;
                     height: 65px;
                     float: left;
+
+                    // @media(max-width:1200px) {
+                    //     margin-left: 15px;
+                    // }
 
                     .logo {
                         width: 136px;
@@ -276,6 +486,7 @@ html body {
             width: 100%;
             height: auto;
             overflow: hidden;
+            border-top: 1px solid #745227;
             // background: #000;
 
             .swiper-container {
@@ -351,7 +562,7 @@ html body {
                 }
 
                 .news-box {
-                    width: 1225px;
+                    width: 1220px;
                     height: 33px;
                     background: #000000b8;
                     border-radius: 5px;
@@ -359,7 +570,7 @@ html body {
                     float: right;
 
                     marquee {
-                        width: 1200px;
+                        width: 1195px;
                         color: #fff6b6;
                         line-height: 35px;
                         float: right;
@@ -368,42 +579,32 @@ html body {
             }
 
             .main-box {
-                width: 100%;
-                height: auto;
-                margin-top: 20px;
-                // background: rosybrown;
+                width: 1278px;
+                height: 517px;
+                // margin-top: 20px;
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: space-around;
                 position: relative;
                 margin-bottom: 55px;
 
-                @media(max-width:1300px) {
-                    width: 86%;
-                    height: auto;
-                    margin: auto;
-                }
-
                 .main-btn {
                     width: 223px;
                     height: 517px;
                     background: url(../img/main-btn.png) no-repeat;
-                    background-size: 100%;
+                    background-size: contain;
                     position: relative;
                     cursor: pointer;
+
 
                     &:hover,&:active,&.active {
                         transform: scale(1.1);
                         filter: brightness(1.1);
                     }
 
-                    @media(max-width:1280px) {
-                        width: 200px;
-                        height: 500px;
-                    }
 
                     .img {
-                        width: 223px;
+                        width: 190px;
                         height: 341px;
                         background: url(../img/main-btn-img.png) no-repeat;
                         margin: 154px 0px 0 0px;
@@ -526,7 +727,8 @@ html body {
                           }
     
                           &:hover,&:active,&.active{
-    
+                            color: #987709;
+
                             &:after {
                                width: 100%;
                                right: 100%;
@@ -586,7 +788,7 @@ html body {
         height: 170px;
         z-index: 998;
         position: fixed;
-        bottom: 200px;
+        bottom: 180px;
         cursor: pointer;
 
         .gift-img {

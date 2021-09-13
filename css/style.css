@@ -63,6 +63,10 @@ html body .register {
   background: #00000066;
   z-index: 999;
   position: absolute;
+  display: none;
+}
+html body .register.display {
+  display: block;
 }
 html body .register .close {
   width: 62px;
@@ -70,8 +74,7 @@ html body .register .close {
   background: url(../img/close.png) no-repeat;
   background-size: 100%;
   position: absolute;
-  top: 118px;
-  right: 460px;
+  margin: -37px 0 0 861px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
@@ -105,6 +108,181 @@ html body .register .register-box .register-top {
   color: #fff;
   text-align: center;
   line-height: 87px;
+}
+html body .register .register-box .register-main {
+  width: 82%;
+  height: 300px;
+  margin: auto;
+  margin-top: 6px;
+}
+html body .register .register-box .register-main .register-main-left {
+  width: 50%;
+  height: 300px;
+  float: left;
+}
+html body .register .register-box .register-main .register-main-left input {
+  width: 305px;
+  height: 44px;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+  color: #351f01;
+  border: 1px solid #2d1a00;
+  outline: none;
+  margin-top: 20px;
+}
+html body .register .register-box .register-main .register-main-left input::-webkit-input-placeholder {
+  color: #351f01;
+  font-size: 18px;
+}
+html body .register .register-box .register-main .register-main-left h1 {
+  top: 416px;
+  position: absolute;
+  color: #fff0a0;
+  font-size: 14px;
+}
+html body .register .register-box .register-main .register-main-left h2 {
+  top: 484px;
+  position: absolute;
+  color: #fff0a0;
+  font-size: 14px;
+}
+html body .register .register-box .register-main .register-main-right {
+  width: 50%;
+  height: 300px;
+  float: right;
+}
+html body .register .register-box .register-main .register-main-right input {
+  width: 305px;
+  height: 44px;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+  color: #351f01;
+  border: 1px solid #2d1a00;
+  outline: none;
+  margin-top: 20px;
+  float: right;
+}
+html body .register .register-box .register-main .register-main-right input::-webkit-input-placeholder {
+  color: #351f01;
+  font-size: 18px;
+}
+html body .register .register-box .register-main .register-main-right button {
+  width: 120px;
+  height: 33px;
+  border: 1px solid #694c26;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, right top, left top, from(#e9c464), to(#ffef95));
+  background: linear-gradient(to left, #e9c464 0%, #ffef95 100%);
+  font-size: 15px;
+  color: #674208;
+  font-weight: bold;
+  position: relative;
+  float: right;
+  top: -108px;
+  left: -8px;
+  cursor: pointer;
+}
+html body .register .register-box .register-main .register-main-right .check-box {
+  width: 320px;
+  height: auto;
+  top: 5px;
+  float: right;
+  position: relative;
+}
+html body .register .register-box .register-main .register-main-right .check-box .check {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+html body .register .register-box .register-main .register-main-right .check-box input[type=checkbox] {
+  opacity: 0;
+}
+html body .register .register-box .register-main .register-main-right .check-box input[type=checkbox]:checked + i {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+}
+html body .register .register-box .register-main .register-main-right .check-box input[type=checkbox]:checked + i:after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 13px;
+  border-top: 4px solid #703600;
+  border-left: 4px solid #703600;
+  -webkit-transform: rotate(230deg);
+          transform: rotate(230deg);
+  position: absolute;
+  left: 6px;
+  top: 1px;
+}
+html body .register .register-box .register-main .register-main-right h3 {
+  font-size: 18px;
+  color: #fff;
+  float: right;
+  margin-top: 3px;
+  margin-right: 11px;
+  font-weight: bold;
+}
+html body .register .register-box .register-main .register-main-right p {
+  font-size: 18px;
+  color: #fff;
+  float: right;
+  margin-top: 3px;
+  margin-right: 2px;
+  font-weight: bold;
+  color: #f4df75;
+  cursor: pointer;
+}
+html body .register .register-box .register-button {
+  width: 82%;
+  height: 90px;
+  border-radius: 15px;
+  margin: auto;
+}
+html body .register .register-box .register-button .button-left {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+html body .register .register-box .register-button .button-left button {
+  width: 320px;
+  height: 56px;
+  background: url(../img/register-button.png) no-repeat;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  color: #454444;
+  font-weight: bold;
+  cursor: pointer;
+  float: left;
+}
+html body .register .register-box .register-button .button-right {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+html body .register .register-box .register-button .button-right button {
+  width: 320px;
+  height: 56px;
+  background: url(../img/register-button.png) no-repeat;
+  background-position: calc(100% + 2px);
+  outline: none;
+  border: none;
+  font-size: 22px;
+  color: #454444;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
 }
 html body header {
   width: 100%;
@@ -310,6 +488,7 @@ html body main .banner {
   width: 100%;
   height: auto;
   overflow: hidden;
+  border-top: 1px solid #745227;
 }
 html body main .banner .swiper-container {
   width: 100%;
@@ -380,7 +559,7 @@ html body main article .news .news-icon {
   background-size: contain;
 }
 html body main article .news .news-box {
-  width: 1225px;
+  width: 1220px;
   height: 33px;
   background: #000000b8;
   border-radius: 5px;
@@ -388,15 +567,14 @@ html body main article .news .news-box {
   float: right;
 }
 html body main article .news .news-box marquee {
-  width: 1200px;
+  width: 1195px;
   color: #fff6b6;
   line-height: 35px;
   float: right;
 }
 html body main article .main-box {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
+  width: 1278px;
+  height: 517px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,18 +585,11 @@ html body main article .main-box {
   position: relative;
   margin-bottom: 55px;
 }
-@media (max-width: 1300px) {
-  html body main article .main-box {
-    width: 86%;
-    height: auto;
-    margin: auto;
-  }
-}
 html body main article .main-box .main-btn {
   width: 223px;
   height: 517px;
   background: url(../img/main-btn.png) no-repeat;
-  background-size: 100%;
+  background-size: contain;
   position: relative;
   cursor: pointer;
 }
@@ -428,14 +599,8 @@ html body main article .main-box .main-btn:hover, html body main article .main-b
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
 }
-@media (max-width: 1280px) {
-  html body main article .main-box .main-btn {
-    width: 200px;
-    height: 500px;
-  }
-}
 html body main article .main-box .main-btn .img {
-  width: 223px;
+  width: 190px;
   height: 341px;
   background: url(../img/main-btn-img.png) no-repeat;
   margin: 154px 0px 0 0px;
@@ -544,6 +709,9 @@ html body footer .footer-1 article ul li:after {
   height: 1px;
   background: #2e2902;
 }
+html body footer .footer-1 article ul li:hover, html body footer .footer-1 article ul li:active, html body footer .footer-1 article ul li.active {
+  color: #987709;
+}
 html body footer .footer-1 article ul li:hover:after, html body footer .footer-1 article ul li:active:after, html body footer .footer-1 article ul li.active:after {
   width: 100%;
   right: 100%;
@@ -590,7 +758,7 @@ html body .gift {
   height: 170px;
   z-index: 998;
   position: fixed;
-  bottom: 200px;
+  bottom: 180px;
   cursor: pointer;
 }
 html body .gift .gift-img {
