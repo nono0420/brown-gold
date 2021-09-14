@@ -579,9 +579,9 @@ html body {
             }
 
             .main-box {
-                width: 1278px;
-                height: 517px;
-                // margin-top: 20px;
+                width: 100%;
+                height: auto;
+                margin-top: 41px;
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: space-around;
@@ -589,10 +589,10 @@ html body {
                 margin-bottom: 55px;
 
                 .main-btn {
-                    width: 223px;
-                    height: 517px;
+                    width: 215px;
+                    height: 511px;
                     background: url(../img/main-btn.png) no-repeat;
-                    background-size: contain;
+                    background-size: 100%;
                     position: relative;
                     cursor: pointer;
 
@@ -604,43 +604,53 @@ html body {
 
 
                     .img {
-                        width: 190px;
-                        height: 341px;
-                        background: url(../img/main-btn-img.png) no-repeat;
-                        margin: 154px 0px 0 0px;
-                        padding-left: 16px;
-                        position: relative;
+                        width: 212px;
+                        height: 380px;
+                        background: url(../img/main-btn-img-3.png) no-repeat;
+                        position: absolute;
                     }
 
                     .img-1 {
-                        background-position-x: calc(100% + 1098px);
+                        background-position-x: calc(100% + 1090px);
+                        margin: 107px 0 0 -14px;
                     }
 
                     .img-2 {
-                        background-position-x: calc(100% + 873px);
+                        background-position-x: calc(100% + 864px);
+                        margin: 107px 0 0 0px;
                     }
 
                     .img-3 {
-                        background-position-x: calc(100% + 647px);
+                        background-position-x: calc(100% + 659px);
+                        margin: 108px 0 0 -7px;
                     }
 
                     .img-4 {
-                        background-position-x: calc(100% + 422px);
+                        width: 233px;
+                        height: 380px;
+                        background-position-x: calc(100% + 426px);
+                        margin: 107px 0 0 -7px;
                     }
 
                     .img-5 {
                         background-position-x: calc(100% + 195px);
+                        margin: 108px 0 0 -6px;
+                        width: 240px;
+                        height: 380px;
                     }
 
                     .img-6 {
-                        background-position-x: calc(100% - 30px);
+                        background-position-x: calc(100% + 7px);
+                        width: 198px;
+                        height: 380px;
+                        margin: 107px 0 0 13px;
                     }
 
                      div {
                         width: 130px;
                         height: 75px;
-                        position: relative;
-                        margin: -430px 0 0px 45px;
+                        position: absolute;
+                        margin: 63px 0 0px 38px;
 
                         h1 {
                             font-size: 28px;
@@ -663,8 +673,12 @@ html body {
                         color: #ffffbc;
                         font-size: 30px;
                         position: relative;
-                        margin-top: 289px;
+                        margin-top: 409px;
                         text-align: center;
+
+                        &:hover,&:active,&.active {
+                            color: #fffed2;
+                        }
                     }
 
                     &:hover,&:active,&.active {
@@ -777,6 +791,34 @@ html body {
                     color: #e5ce68;
                     letter-spacing: 1px;
                     padding-top: 17px;
+                }
+            }
+
+            .top {
+                width: 56px;
+                height: 120px;
+                bottom: 40px;
+                right: 10px;
+                position: absolute;
+                cursor: pointer;
+                transition: 0.5s;
+        
+                &:hover,&:active,&.active {
+                    bottom: 60px;
+                }
+        
+                .top-img {
+                    width: 56px;
+                    height: 101px;
+                    background: url(../img/top.png) no-repeat;
+                    background-size: contain;
+                }
+        
+                .top-text {
+                    width: 100%;
+                    text-align: center;
+                    color: #fffcad;
+                    padding-top: 5px;
                 }
             }
         }
@@ -964,33 +1006,6 @@ html body {
         }
     }
 
-    .top {
-        width: 56px;
-        height: 120px;
-        position: fixed;
-        bottom: 190px;
-        right: 10px;
-        cursor: pointer;
-        transition: 0.5s;
-
-        &:hover,&:active,&.active {
-            bottom: 220px;
-        }
-
-        .top-img {
-            width: 56px;
-            height: 101px;
-            background: url(../img/top.png) no-repeat;
-            background-size: contain;
-        }
-
-        .top-text {
-            width: 100%;
-            text-align: center;
-            color: #fffcad;
-            padding-top: 5px;
-        }
-    }
 
     .bg {
         width: 100%;
