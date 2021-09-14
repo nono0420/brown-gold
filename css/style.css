@@ -362,8 +362,8 @@ html body header article .header-1 .header-top-bg .input-box button {
   margin-left: 6px;
 }
 html body header article .header-1 .header-top-bg .input-box button:hover, html body header article .header-1 .header-top-bg .input-box button:active, html body header article .header-1 .header-top-bg .input-box button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e5ffe2), color-stop(5%, #9aff48), color-stop(30%, #3cd500), color-stop(88%, #0f8100), to(#f9ffdb));
-  background: linear-gradient(to bottom, #e5ffe2 0%, #9aff48 5%, #3cd500 30%, #0f8100 88%, #f9ffdb 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-1%, #3cd500), color-stop(96%, #0f8100), to(#f9ffdb));
+  background: linear-gradient(to top, #3cd500 -1%, #0f8100 96%, #f9ffdb 100%);
   border: 1px solid #d8ff94;
 }
 html body header article .header-1 .header-top-bg .input-box .forget {
@@ -469,6 +469,9 @@ html body header article .header-2 ul li:after {
   height: 1px;
   background: #fff6b6;
 }
+html body header article .header-2 ul li:hover a, html body header article .header-2 ul li:active a, html body header article .header-2 ul li.active a {
+  color: #f9eb4e;
+}
 html body header article .header-2 ul li:hover:after, html body header article .header-2 ul li:active:after, html body header article .header-2 ul li.active:after {
   width: 100%;
   right: 100%;
@@ -480,9 +483,6 @@ html body header article .header-2 ul li a {
   color: #fff6b6;
   font-weight: bold;
   text-decoration: none;
-}
-html body header article .header-2 ul li a:hover, html body header article .header-2 ul li a:active, html body header article .header-2 ul li a.active {
-  color: #fff9cf;
 }
 html body main {
   width: 100%;
@@ -734,6 +734,7 @@ html body footer .footer-1 article ul li:hover:after, html body footer .footer-1
   width: 100%;
   right: 100%;
   left: 0%;
+  height: 2px;
 }
 html body footer .footer-1 article div {
   width: 270px;
@@ -845,6 +846,8 @@ html body .left .left-circle {
 }
 html body .left .left-circle:hover, html body .left .left-circle:active, html body .left .left-circle.active {
   background: linear-gradient(6deg, #ffffff 1%, #e2d5b5 30%, #ffed8a 85%, #ffed8a 85%, #ffffff 100%);
+  -webkit-animation: swing 1s ease;
+          animation: swing 1s ease;
 }
 html body .left .left-circle:hover .left-box, html body .left .left-circle:active .left-box, html body .left .left-circle.active .left-box {
   display: block;
@@ -940,8 +943,38 @@ html body .right-box .right-circle {
   -webkit-box-shadow: 0px 1px 7px #fff5ce;
           box-shadow: 0px 1px 7px #fff5ce;
 }
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
 html body .right-box .right-circle:hover, html body .right-box .right-circle:active, html body .right-box .right-circle.active {
   background: linear-gradient(6deg, #ffffff 1%, #e2d5b5 30%, #ffed8a 85%, #ffed8a 85%, #ffffff 100%);
+  -webkit-animation: swing 1s ease;
+          animation: swing 1s ease;
 }
 html body .right-box .right-circle .line-img {
   width: 26px;
