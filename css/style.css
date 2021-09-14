@@ -473,12 +473,16 @@ html body header article .header-2 ul li:hover:after, html body header article .
   width: 100%;
   right: 100%;
   left: 0;
+  height: 2px;
 }
 html body header article .header-2 ul li a {
   font-size: 20px;
   color: #fff6b6;
   font-weight: bold;
   text-decoration: none;
+}
+html body header article .header-2 ul li a:hover, html body header article .header-2 ul li a:active, html body header article .header-2 ul li a.active {
+  color: #fff9cf;
 }
 html body main {
   width: 100%;

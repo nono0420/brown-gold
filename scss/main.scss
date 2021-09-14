@@ -455,6 +455,7 @@ html body {
                             bottom: 0;
                             height: 1px;
                             background: #fff6b6;
+                            
                           }
     
                           &:hover,&:active,&.active{
@@ -463,6 +464,7 @@ html body {
                                width: 100%;
                                right: 100%;
                                left: 0;
+                               height: 2px;
                             }
                           }
                         
@@ -471,6 +473,10 @@ html body {
                             color: #fff6b6;
                             font-weight: bold;
                             text-decoration: none;
+
+                            &:hover,&:active,&.active{
+                                color: #fff9cf;
+                            }
                         }
                     }
                 }
