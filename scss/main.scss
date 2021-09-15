@@ -352,6 +352,7 @@ html body {
                             background: url(../img/forget-button.png) no-repeat;
                             background-size: 100%;
                             margin-top: -5px;
+                            cursor: pointer;
 
                             a {
                                 text-decoration: none;
@@ -360,6 +361,10 @@ html body {
                                 font-size: 14px;
                                 font-weight: bold;
                                 color: #382105;
+                            }
+
+                            &:hover,&:active,&.active {
+                                filter: brightness(1.2);
                             }
                         }
 
@@ -397,6 +402,10 @@ html body {
                                 option {
                                     background: #ffed8a;
                                 }
+                            }
+
+                            &:hover,&:active,&.active {
+                                filter: brightness(1.2);
                             }
                         }
                     }
@@ -459,7 +468,7 @@ html body {
     
                           &:hover,&:active,&.active{
                             a {
-                                color: #f9eb4e;
+                                color: #ffcb0f;
                             }
 
                             &:after {
@@ -856,7 +865,24 @@ html body {
 
         &:hover {
             .gift-img {
-                transform: rotate(20deg);
+                width: 172px;
+                height: 175px;
+                animation: swing1 1s ease;
+            }
+        }
+
+        @keyframes swing1 {
+            15% {
+                transform: rotate(15deg);
+            }
+            30% {
+                transform:  rotate(-15deg);
+            }
+            45% {
+                transform:  rotate(15deg);
+            }
+            60% {
+                transform:  rotate(-15deg);
             }
         }
     } 

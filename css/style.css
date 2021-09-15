@@ -373,6 +373,7 @@ html body header article .header-1 .header-top-bg .input-box .forget {
   background: url(../img/forget-button.png) no-repeat;
   background-size: 100%;
   margin-top: -5px;
+  cursor: pointer;
 }
 html body header article .header-1 .header-top-bg .input-box .forget a {
   text-decoration: none;
@@ -381,6 +382,10 @@ html body header article .header-1 .header-top-bg .input-box .forget a {
   font-size: 14px;
   font-weight: bold;
   color: #382105;
+}
+html body header article .header-1 .header-top-bg .input-box .forget:hover, html body header article .header-1 .header-top-bg .input-box .forget:active, html body header article .header-1 .header-top-bg .input-box .forget.active {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 html body header article .header-1 .header-top-bg .input-box .chinese-select {
   width: 104px;
@@ -416,6 +421,10 @@ html body header article .header-1 .header-top-bg .input-box .chinese-select sel
 }
 html body header article .header-1 .header-top-bg .input-box .chinese-select select option {
   background: #ffed8a;
+}
+html body header article .header-1 .header-top-bg .input-box .chinese-select:hover, html body header article .header-1 .header-top-bg .input-box .chinese-select:active, html body header article .header-1 .header-top-bg .input-box .chinese-select.active {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 html body header article .header-2 {
   width: 100%;
@@ -470,7 +479,7 @@ html body header article .header-2 ul li:after {
   background: #fff6b6;
 }
 html body header article .header-2 ul li:hover a, html body header article .header-2 ul li:active a, html body header article .header-2 ul li.active a {
-  color: #f9eb4e;
+  color: #ffcb0f;
 }
 html body header article .header-2 ul li:hover:after, html body header article .header-2 ul li:active:after, html body header article .header-2 ul li.active:after {
   width: 100%;
@@ -821,8 +830,46 @@ html body .gift .gift-text {
   margin-top: -10px;
 }
 html body .gift:hover .gift-img {
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  width: 172px;
+  height: 175px;
+  -webkit-animation: swing1 1s ease;
+          animation: swing1 1s ease;
+}
+@-webkit-keyframes swing1 {
+  15% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  30% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  45% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
+@keyframes swing1 {
+  15% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  30% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  45% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
 }
 html body .left {
   width: 100px;
