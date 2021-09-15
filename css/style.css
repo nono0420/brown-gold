@@ -606,48 +606,92 @@ html body main article .main-box .main-btn {
   background-size: 100%;
   position: relative;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 html body main article .main-box .main-btn:hover, html body main article .main-box .main-btn:active, html body main article .main-box .main-btn.active {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
+  -webkit-filter: drop-shadow(-1px -4px 11px #fff6b6);
+          filter: drop-shadow(-1px -4px 11px #fff6b6);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+html body main article .main-box .main-btn:hover .img, html body main article .main-box .main-btn:active .img, html body main article .main-box .main-btn.active .img {
+  -webkit-animation: flash 2s;
+          animation: flash 2s;
+}
+html body main article .main-box .main-btn:hover h1, html body main article .main-box .main-btn:active h1, html body main article .main-box .main-btn.active h1 {
+  color: #c80aea;
+}
+html body main article .main-box .main-btn:hover h2, html body main article .main-box .main-btn:active h2, html body main article .main-box .main-btn.active h2 {
+  color: #c80aea;
+}
+html body main article .main-box .main-btn:hover p, html body main article .main-box .main-btn:active p, html body main article .main-box .main-btn.active p {
+  color: #fffed2;
+  bottom: 20px;
+  text-shadow: 2px 0px 2px #000;
+}
+html body main article .main-box .main-btn .main-logo {
+  width: 29px;
+  height: 34px;
+  background: url(../img/bng-logo.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: -44px;
+  right: 29px;
 }
 html body main article .main-box .main-btn .img {
   width: 212px;
   height: 380px;
-  background: url(../img/main-btn-img-3.png) no-repeat;
+  background: url(../img/main-btn-img-2.png) no-repeat;
   position: absolute;
+}
+@-webkit-keyframes flash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 html body main article .main-box .main-btn .img-1 {
   background-position-x: calc(100% + 1090px);
-  margin: 107px 0 0 -14px;
+  margin: 115px 0 0 -12px;
 }
 html body main article .main-box .main-btn .img-2 {
   background-position-x: calc(100% + 864px);
-  margin: 107px 0 0 0px;
+  margin: 115px 0 0 2px;
 }
 html body main article .main-box .main-btn .img-3 {
   background-position-x: calc(100% + 659px);
-  margin: 108px 0 0 -7px;
+  margin: 115px 0 0 -4px;
 }
 html body main article .main-box .main-btn .img-4 {
-  width: 233px;
+  width: 230px;
   height: 380px;
-  background-position-x: calc(100% + 426px);
-  margin: 107px 0 0 -7px;
+  background-position-x: calc(100% + 435px);
+  margin: 115px 0 0 -11px;
 }
 html body main article .main-box .main-btn .img-5 {
-  background-position-x: calc(100% + 195px);
-  margin: 108px 0 0 -6px;
-  width: 240px;
+  background-position-x: calc(100% + 220px);
+  margin: 115px 0 0 -3px;
+  width: 214px;
   height: 380px;
 }
 html body main article .main-box .main-btn .img-6 {
-  background-position-x: calc(100% + 7px);
-  width: 198px;
+  background-position-x: calc(100% + 1px);
+  width: 204px;
   height: 380px;
-  margin: 107px 0 0 13px;
+  margin: 114px 0 0 14px;
 }
 html body main article .main-box .main-btn div {
   width: 130px;
@@ -675,17 +719,17 @@ html body main article .main-box .main-btn p {
   color: #ffffbc;
   font-size: 30px;
   position: relative;
-  margin-top: 409px;
+  margin-top: 420px;
   text-align: center;
 }
-html body main article .main-box .main-btn p:hover, html body main article .main-box .main-btn p:active, html body main article .main-box .main-btn p.active {
-  color: #fffed2;
-}
-html body main article .main-box .main-btn:hover h1, html body main article .main-box .main-btn:active h1, html body main article .main-box .main-btn.active h1 {
-  color: #c80aea;
-}
-html body main article .main-box .main-btn:hover h2, html body main article .main-box .main-btn:active h2, html body main article .main-box .main-btn.active h2 {
-  color: #c80aea;
+html body main article .main-box .main-btn .triangle {
+  width: 63px;
+  height: 44px;
+  background: url(../img/main-btn-triangle.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: 23px;
+  right: 11px;
 }
 html body footer {
   width: 100%;
@@ -737,7 +781,7 @@ html body footer .footer-1 article ul li:after {
   background: #2e2902;
 }
 html body footer .footer-1 article ul li:hover, html body footer .footer-1 article ul li:active, html body footer .footer-1 article ul li.active {
-  color: #987709;
+  color: #736124;
 }
 html body footer .footer-1 article ul li:hover:after, html body footer .footer-1 article ul li:active:after, html body footer .footer-1 article ul li.active:after {
   width: 100%;
@@ -829,7 +873,7 @@ html body .gift .gift-text {
   text-align: center;
   margin-top: -10px;
 }
-html body .gift:hover .gift-img {
+html body .gift:hover {
   width: 172px;
   height: 175px;
   -webkit-animation: swing1 1s ease;
@@ -1019,7 +1063,7 @@ html body .right-box .right-circle {
   }
 }
 html body .right-box .right-circle:hover, html body .right-box .right-circle:active, html body .right-box .right-circle.active {
-  background: linear-gradient(6deg, #ffffff 1%, #e2d5b5 30%, #ffed8a 85%, #ffed8a 85%, #ffffff 100%);
+  background: linear-gradient(10deg, #ffffff 1%, #e2d5b5 30%, #ffed8a 85%, #ffed8a 85%, #ffffff 100%);
   -webkit-animation: swing 1s ease;
           animation: swing 1s ease;
 }

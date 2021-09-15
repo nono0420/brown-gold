@@ -608,55 +608,94 @@ html body {
                     background-size: 100%;
                     position: relative;
                     cursor: pointer;
+                    transition: 0.5s;
 
 
                     &:hover,&:active,&.active {
                         transform: scale(1.1);
-                        filter: brightness(1.1);
+                        filter: drop-shadow(-1px -4px 11px #fff6b6);
+                        transition: 0.5s;
+
+                        .img {
+                            animation: flash 2s ;
+                        }
+
+                        h1 {
+                            color: #c80aea;
+                        }
+
+                        h2 {
+                            color:#c80aea;
+                        }
+
+                        p { 
+                            color: #fffed2;
+                            bottom: 20px;
+                            text-shadow: 2px 0px 2px #000;
+                        }
+                    }
+
+                    .main-logo {
+                        width: 29px;
+                        height: 34px;
+                        background: url(../img/bng-logo.png) no-repeat;
+                        background-size: 100%;
+                        position: absolute;
+                        top: -44px;
+                        right: 29px;
                     }
 
 
                     .img {
                         width: 212px;
                         height: 380px;
-                        background: url(../img/main-btn-img-3.png) no-repeat;
+                        background: url(../img/main-btn-img-2.png) no-repeat;
                         position: absolute;
+
+                        @keyframes flash{
+                            from {
+                                opacity: 0;
+                            }
+                            to {
+                                opacity: 1;
+                            }
+                        }
                     }
 
                     .img-1 {
                         background-position-x: calc(100% + 1090px);
-                        margin: 107px 0 0 -14px;
+                        margin: 115px 0 0 -12px;
                     }
 
                     .img-2 {
                         background-position-x: calc(100% + 864px);
-                        margin: 107px 0 0 0px;
+                        margin: 115px 0 0 2px;
                     }
 
                     .img-3 {
                         background-position-x: calc(100% + 659px);
-                        margin: 108px 0 0 -7px;
+                        margin: 115px 0 0 -4px;
                     }
 
                     .img-4 {
-                        width: 233px;
+                        width: 230px;
                         height: 380px;
-                        background-position-x: calc(100% + 426px);
-                        margin: 107px 0 0 -7px;
+                        background-position-x: calc(100% + 435px);
+                        margin: 115px 0 0 -11px;
                     }
 
                     .img-5 {
-                        background-position-x: calc(100% + 195px);
-                        margin: 108px 0 0 -6px;
-                        width: 240px;
+                        background-position-x: calc(100% + 220px);
+                        margin: 115px 0 0 -3px;
+                        width: 214px;
                         height: 380px;
                     }
 
                     .img-6 {
-                        background-position-x: calc(100% + 7px);
-                        width: 198px;
+                        background-position-x: calc(100% + 1px);
+                        width: 204px;
                         height: 380px;
-                        margin: 107px 0 0 13px;
+                        margin: 114px 0 0 14px;
                     }
 
                      div {
@@ -686,22 +725,18 @@ html body {
                         color: #ffffbc;
                         font-size: 30px;
                         position: relative;
-                        margin-top: 409px;
+                        margin-top: 420px;
                         text-align: center;
-
-                        &:hover,&:active,&.active {
-                            color: #fffed2;
-                        }
                     }
 
-                    &:hover,&:active,&.active {
-                        h1 {
-                            color: #c80aea;
-                        }
-
-                        h2 {
-                            color:#c80aea;
-                        }
+                    .triangle {
+                        width: 63px;
+                        height: 44px;
+                        background: url(../img/main-btn-triangle.png) no-repeat;
+                        background-size: 100%;
+                        position: absolute;
+                        bottom: 23px;
+                        right: 11px;
                     }
                 }
             }
@@ -754,7 +789,7 @@ html body {
                         }
     
                           &:hover,&:active,&.active{
-                            color: #987709;
+                            color: #736124;
 
                             &:after {
                                width: 100%;
@@ -864,12 +899,10 @@ html body {
         }
 
         &:hover {
-            .gift-img {
-                width: 172px;
-                height: 175px;
-                animation: swing1 1s ease;
-            }
-        }
+            width: 172px;
+            height: 175px;
+            animation: swing1 1s ease;
+    }
 
         @keyframes swing1 {
             15% {
@@ -1019,7 +1052,7 @@ html body {
             }
 
             &:hover,&:active,&.active {
-                background: linear-gradient(6deg, #ffffff 1%, #e2d5b5 30%, #ffed8a 85%, #ffed8a 85%, #ffffff 100%);
+                background: linear-gradient(10deg, #ffffff 1%, #e2d5b5 30%, #ffed8a 85%, #ffed8a 85%, #ffffff 100%);
                 animation: swing 1s ease;
             }
 
