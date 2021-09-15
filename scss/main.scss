@@ -19,12 +19,12 @@ html body {
         }
 
         .close {
-            width: 62px;
-            height: 62px;
+            width: 56px;
+            height: 56px;
             background: url(../img/close.png) no-repeat;
             background-size: 100%;
             position: absolute;
-            margin: -37px 0 0 861px;
+            margin: -37px 0 0 781px;
             transition: 0.3s;
             cursor: pointer;
 
@@ -34,8 +34,8 @@ html body {
         }
 
         .register-box {
-            width: 845px;
-            height: 490px;
+            width: 760px;
+            height: 415px;
             background: url(../img/register.png) no-repeat;
             background-size: cover;
             margin: auto;
@@ -46,7 +46,7 @@ html body {
 
             .register-top {
                 width: 100%;
-                height: 87px;
+                height: 70px;
                 border-radius: 10px 10px 0 0;
                 background: linear-gradient(to bottom, #ffe492 2%, #8f4d00 11%, #4c2a00 48%, #1d1000 100% );
                 border-bottom: 2px solid #fff7d6;
@@ -55,26 +55,27 @@ html body {
                 letter-spacing: 3px;
                 color: #fff;
                 text-align: center;
-                line-height: 87px;
+                line-height: 74px;
             }
 
             .register-main {
                 width: 82%;
-                height: 300px;
+                height: 262px;
                 margin: auto;
                 margin-top: 6px;
 
                 .register-main-left {
                     width: 50%;
-                    height: 300px;
+                    height: 262px;
                     float: left;
 
                     input {
-                        width: 305px;
-                        height: 44px;
+                        width: 275px;
+                        height: 35px;
                         border-radius: 5px;
                         padding-left: 15px;
-                        font-size: 18px;
+                        padding-top: 2px;
+                        font-size: 16px;
                         color: #351f01;
                         border: 1px solid #2d1a00;
                         outline: none;
@@ -83,19 +84,19 @@ html body {
 
                     input::-webkit-input-placeholder {
                         color: #351f01;
-                        font-size: 18px;
+                        font-size: 16px;
                         // font-weight: bold;
                     }
 
                     h1 {
-                        top: 416px;
+                        top: 383px;
                         position: absolute;
                         color: #fff0a0;
                         font-size: 14px;
                     }
 
                     h2 {
-                        top: 484px;
+                        top: 443px;
                         position: absolute;
                         color: #fff0a0;
                         font-size: 14px;
@@ -104,15 +105,16 @@ html body {
 
                 .register-main-right {
                     width: 50%;
-                    height: 300px;
+                    height: 262px;
                     float: right;
 
                     input {
-                        width: 305px;
-                        height: 44px;
+                        width: 275px;
+                        height: 35px;
                         border-radius: 5px;
                         padding-left: 15px;
-                        font-size: 18px;
+                        padding-top: 2px;
+                        font-size: 16px;
                         color: #351f01;
                         border: 1px solid #2d1a00;
                         outline: none;
@@ -122,8 +124,7 @@ html body {
 
                     input::-webkit-input-placeholder {
                         color: #351f01;
-                        font-size: 18px;
-                        // font-weight: bold;
+                        font-size: 16px;
                     }
 
                     button {
@@ -137,13 +138,19 @@ html body {
                         font-weight: bold;
                         position: relative;
                         float: right;
-                        top: -108px;
-                        left: -8px;
+                        top: -97px;
+                        left: -7px;
                         cursor: pointer;
+                        transition: 0.3s;
+
+                        &:hover,&:active,&.active {
+                            filter: brightness(1.1);
+                            background: linear-gradient(to right,#e9c464 0%,#ffef95 100%);
+                        }
                     }
 
                     .check-box {
-                        width: 320px;
+                        width: 290px;
                         height: auto;
                         // background: mediumaquamarine;
                         top: 5px;
@@ -186,7 +193,7 @@ html body {
                     }
 
                     h3 {
-                        font-size: 18px;
+                        font-size: 16px;
                         color: #fff;
                         float: right;
                         margin-top: 3px;
@@ -195,7 +202,7 @@ html body {
                     }
 
                     p {
-                        font-size: 18px;
+                        font-size: 16px;
                         color: #fff;
                         float: right;
                         margin-top: 3px;
@@ -209,7 +216,7 @@ html body {
 
             .register-button {
                 width: 82%;
-                height: 90px;
+                height: 60px;
                 border-radius: 15px;
                 margin: auto;
 
@@ -219,16 +226,22 @@ html body {
                     float: left;
 
                     button {
-                        width: 320px;
+                        width: 290px;
                         height: 56px;
                         background: url(../img/register-button.png) no-repeat;
                         outline: none;
                         border: none;
-                        font-size: 22px;
+                        font-size: 20px;
                         color: #454444;
                         font-weight: bold;
                         cursor: pointer;
                         float: left;
+                        line-height: 56px;
+                        text-align: center;
+
+                        &:hover,&:active,&.active {
+                            filter: brightness(1.1);
+                        }
                     }
                 }
 
@@ -238,17 +251,22 @@ html body {
                     float: left;
 
                     button {
-                        width: 320px;
+                        width: 290px;
                         height: 56px;
                         background: url(../img/register-button.png) no-repeat;
                         background-position: calc(100% + 2px);
                         outline: none;
                         border: none;
-                        font-size: 22px;
+                        font-size: 20px;
                         color: #454444;
                         font-weight: bold;
                         cursor: pointer;
                         float: right;
+                        line-height: 56px;
+
+                        &:hover,&:active,&.active {
+                            filter: brightness(1.1);
+                        }
                     }
                 }
             }

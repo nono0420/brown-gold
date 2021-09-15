@@ -69,12 +69,12 @@ html body .register.display {
   display: block;
 }
 html body .register .close {
-  width: 62px;
-  height: 62px;
+  width: 56px;
+  height: 56px;
   background: url(../img/close.png) no-repeat;
   background-size: 100%;
   position: absolute;
-  margin: -37px 0 0 861px;
+  margin: -37px 0 0 781px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
@@ -84,8 +84,8 @@ html body .register .close:hover, html body .register .close:active, html body .
           transform: rotate(90deg);
 }
 html body .register .register-box {
-  width: 845px;
-  height: 490px;
+  width: 760px;
+  height: 415px;
   background: url(../img/register.png) no-repeat;
   background-size: cover;
   margin: auto;
@@ -97,7 +97,7 @@ html body .register .register-box {
 }
 html body .register .register-box .register-top {
   width: 100%;
-  height: 87px;
+  height: 70px;
   border-radius: 10px 10px 0 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #ffe492), color-stop(11%, #8f4d00), color-stop(48%, #4c2a00), to(#1d1000));
   background: linear-gradient(to bottom, #ffe492 2%, #8f4d00 11%, #4c2a00 48%, #1d1000 100%);
@@ -107,25 +107,26 @@ html body .register .register-box .register-top {
   letter-spacing: 3px;
   color: #fff;
   text-align: center;
-  line-height: 87px;
+  line-height: 74px;
 }
 html body .register .register-box .register-main {
   width: 82%;
-  height: 300px;
+  height: 262px;
   margin: auto;
   margin-top: 6px;
 }
 html body .register .register-box .register-main .register-main-left {
   width: 50%;
-  height: 300px;
+  height: 262px;
   float: left;
 }
 html body .register .register-box .register-main .register-main-left input {
-  width: 305px;
-  height: 44px;
+  width: 275px;
+  height: 35px;
   border-radius: 5px;
   padding-left: 15px;
-  font-size: 18px;
+  padding-top: 2px;
+  font-size: 16px;
   color: #351f01;
   border: 1px solid #2d1a00;
   outline: none;
@@ -133,31 +134,32 @@ html body .register .register-box .register-main .register-main-left input {
 }
 html body .register .register-box .register-main .register-main-left input::-webkit-input-placeholder {
   color: #351f01;
-  font-size: 18px;
+  font-size: 16px;
 }
 html body .register .register-box .register-main .register-main-left h1 {
-  top: 416px;
+  top: 383px;
   position: absolute;
   color: #fff0a0;
   font-size: 14px;
 }
 html body .register .register-box .register-main .register-main-left h2 {
-  top: 484px;
+  top: 443px;
   position: absolute;
   color: #fff0a0;
   font-size: 14px;
 }
 html body .register .register-box .register-main .register-main-right {
   width: 50%;
-  height: 300px;
+  height: 262px;
   float: right;
 }
 html body .register .register-box .register-main .register-main-right input {
-  width: 305px;
-  height: 44px;
+  width: 275px;
+  height: 35px;
   border-radius: 5px;
   padding-left: 15px;
-  font-size: 18px;
+  padding-top: 2px;
+  font-size: 16px;
   color: #351f01;
   border: 1px solid #2d1a00;
   outline: none;
@@ -166,7 +168,7 @@ html body .register .register-box .register-main .register-main-right input {
 }
 html body .register .register-box .register-main .register-main-right input::-webkit-input-placeholder {
   color: #351f01;
-  font-size: 18px;
+  font-size: 16px;
 }
 html body .register .register-box .register-main .register-main-right button {
   width: 120px;
@@ -180,12 +182,20 @@ html body .register .register-box .register-main .register-main-right button {
   font-weight: bold;
   position: relative;
   float: right;
-  top: -108px;
-  left: -8px;
+  top: -97px;
+  left: -7px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html body .register .register-box .register-main .register-main-right button:hover, html body .register .register-box .register-main .register-main-right button:active, html body .register .register-box .register-main .register-main-right button.active {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  background: -webkit-gradient(linear, left top, right top, from(#e9c464), to(#ffef95));
+  background: linear-gradient(to right, #e9c464 0%, #ffef95 100%);
 }
 html body .register .register-box .register-main .register-main-right .check-box {
-  width: 320px;
+  width: 290px;
   height: auto;
   top: 5px;
   float: right;
@@ -226,7 +236,7 @@ html body .register .register-box .register-main .register-main-right .check-box
   top: 1px;
 }
 html body .register .register-box .register-main .register-main-right h3 {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   float: right;
   margin-top: 3px;
@@ -234,7 +244,7 @@ html body .register .register-box .register-main .register-main-right h3 {
   font-weight: bold;
 }
 html body .register .register-box .register-main .register-main-right p {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   float: right;
   margin-top: 3px;
@@ -245,7 +255,7 @@ html body .register .register-box .register-main .register-main-right p {
 }
 html body .register .register-box .register-button {
   width: 82%;
-  height: 90px;
+  height: 60px;
   border-radius: 15px;
   margin: auto;
 }
@@ -255,16 +265,22 @@ html body .register .register-box .register-button .button-left {
   float: left;
 }
 html body .register .register-box .register-button .button-left button {
-  width: 320px;
+  width: 290px;
   height: 56px;
   background: url(../img/register-button.png) no-repeat;
   outline: none;
   border: none;
-  font-size: 22px;
+  font-size: 20px;
   color: #454444;
   font-weight: bold;
   cursor: pointer;
   float: left;
+  line-height: 56px;
+  text-align: center;
+}
+html body .register .register-box .register-button .button-left button:hover, html body .register .register-box .register-button .button-left button:active, html body .register .register-box .register-button .button-left button.active {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 html body .register .register-box .register-button .button-right {
   width: 50%;
@@ -272,17 +288,22 @@ html body .register .register-box .register-button .button-right {
   float: left;
 }
 html body .register .register-box .register-button .button-right button {
-  width: 320px;
+  width: 290px;
   height: 56px;
   background: url(../img/register-button.png) no-repeat;
   background-position: calc(100% + 2px);
   outline: none;
   border: none;
-  font-size: 22px;
+  font-size: 20px;
   color: #454444;
   font-weight: bold;
   cursor: pointer;
   float: right;
+  line-height: 56px;
+}
+html body .register .register-box .register-button .button-right button:hover, html body .register .register-box .register-button .button-right button:active, html body .register .register-box .register-button .button-right button.active {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 html body header {
   width: 100%;
