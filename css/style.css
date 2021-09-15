@@ -265,7 +265,7 @@ html body .register .register-box .register-button .button-left {
   float: left;
 }
 html body .register .register-box .register-button .button-left button {
-  width: 290px;
+  width: 282px;
   height: 56px;
   background: url(../img/register-button.png) no-repeat;
   outline: none;
@@ -288,7 +288,7 @@ html body .register .register-box .register-button .button-right {
   float: left;
 }
 html body .register .register-box .register-button .button-right button {
-  width: 290px;
+  width: 282px;
   height: 56px;
   background: url(../img/register-button.png) no-repeat;
   background-position: calc(100% + 2px);
