@@ -128,20 +128,20 @@ html body {
                     }
 
                     button {
-                        width: 120px;
-                        height: 33px;
+                        width: 109px;
+                        height: 30px;
                         border: 1px solid #694c26;
                         border-radius: 5px;
                         background: linear-gradient(to left,#e9c464 0%,#ffef95 100%);
-                        font-size: 15px;
+                        font-size: 14px;
                         color: #674208;
                         font-weight: bold;
                         position: relative;
                         float: right;
-                        top: -97px;
+                        top: -95px;
                         left: -7px;
                         cursor: pointer;
-                        transition: 0.3s;
+                        transition: 0.4s;
 
                         &:hover,&:active,&.active {
                             filter: brightness(1.1);
@@ -203,13 +203,16 @@ html body {
 
                     p {
                         font-size: 16px;
-                        color: #fff;
                         float: right;
                         margin-top: 6px;
                         margin-right: 2px;
                         font-weight: bold;
                         color: #f4df75;
                         cursor: pointer;
+
+                        &:hover,&:active,&.active {
+                            color: #37ff04;
+                        }
                     }
                 }
             }
@@ -227,8 +230,8 @@ html body {
 
                     button {
                         width: 282px;
-                        height: 56px;
-                        background: url(../img/register-button.png) no-repeat;
+                        height: 50px;
+                        background: linear-gradient(to right, #a5a5a5 0%,#ffffff 31%,#ffffff 65%,#dadada 100%);
                         outline: none;
                         border: none;
                         font-size: 20px;
@@ -236,10 +239,14 @@ html body {
                         font-weight: bold;
                         cursor: pointer;
                         float: left;
-                        line-height: 56px;
+                        line-height: 50px;
                         text-align: center;
+                        border-radius: 35px;
+                        border: 1px solid #fffefc;
+                        box-shadow: 1px 3px 4px #000;
 
                         &:hover,&:active,&.active {
+                            background: linear-gradient(to left, #a5a5a5 0%,#ffffff 31%,#ffffff 65%,#dadada 100%);
                             filter: brightness(1.1);
                         }
                     }
@@ -252,8 +259,8 @@ html body {
 
                     button {
                         width: 282px;
-                        height: 56px;
-                        background: url(../img/register-button.png) no-repeat;
+                        height: 50px;
+                        background: linear-gradient(to right, #ebca69 0%,#ffef9b 62%,#c5b055 100%);
                         background-position: calc(100% + 2px);
                         outline: none;
                         border: none;
@@ -262,9 +269,14 @@ html body {
                         font-weight: bold;
                         cursor: pointer;
                         float: right;
-                        line-height: 56px;
+                        line-height: 50px;
+                        text-align: center;
+                        border-radius: 35px;
+                        border: 1px solid #ffe25c;
+                        box-shadow: 1px 3px 4px #000;
 
                         &:hover,&:active,&.active {
+                            background: linear-gradient(to left, #ebca69 0%,#ffef9b 62%,#c5b055 100%);
                             filter: brightness(1.1);
                         }
                     }
