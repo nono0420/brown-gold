@@ -227,8 +227,8 @@ html body .register .register-box .register-main .register-main-right .check-box
   display: inline-block;
   width: 6px;
   height: 13px;
-  border-top: 4px solid #703600;
-  border-left: 4px solid #703600;
+  border-top: 4px solid #d20000;
+  border-left: 4px solid #d20000;
   -webkit-transform: rotate(230deg);
           transform: rotate(230deg);
   position: absolute;
@@ -506,7 +506,8 @@ html body header article .header-2 ul li:hover:after, html body header article .
   width: 100%;
   right: 100%;
   left: 0;
-  height: 2px;
+  height: 3px;
+  background: #ffcb0f;
 }
 html body header article .header-2 ul li a {
   font-size: 20px;
@@ -633,14 +634,14 @@ html body main article .main-box .main-btn {
 html body main article .main-box .main-btn:hover, html body main article .main-box .main-btn:active, html body main article .main-box .main-btn.active {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-filter: drop-shadow(-1px -4px 11px #fff6b6);
-          filter: drop-shadow(-1px -4px 11px #fff6b6);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-filter: drop-shadow(-1px -2px 3px #fff6b6);
+          filter: drop-shadow(-1px -2px 3px #fff6b6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 html body main article .main-box .main-btn:hover .img, html body main article .main-box .main-btn:active .img, html body main article .main-box .main-btn.active .img {
-  -webkit-animation: flash 2s;
-          animation: flash 2s;
+  -webkit-animation: flash 0.5s;
+          animation: flash 0.5s;
 }
 html body main article .main-box .main-btn:hover h1, html body main article .main-box .main-btn:active h1, html body main article .main-box .main-btn.active h1 {
   color: #c80aea;
@@ -670,18 +671,18 @@ html body main article .main-box .main-btn .img {
 }
 @-webkit-keyframes flash {
   from {
-    opacity: 0;
+    top: 5px;
   }
   to {
-    opacity: 1;
+    top: -20px;
   }
 }
 @keyframes flash {
   from {
-    opacity: 0;
+    top: 5px;
   }
   to {
-    opacity: 1;
+    top: -20px;
   }
 }
 html body main article .main-box .main-btn .img-1 {
