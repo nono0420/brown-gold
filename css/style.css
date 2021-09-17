@@ -257,7 +257,7 @@ html body .register .register-box .register-main .register-main-right p:hover, h
 }
 html body .register .register-box .register-button {
   width: 82%;
-  height: 60px;
+  height: 50px;
   border-radius: 15px;
   margin: auto;
 }
@@ -265,6 +265,34 @@ html body .register .register-box .register-button .button-left {
   width: 50%;
   height: 100%;
   float: left;
+  position: relative;
+  overflow: hidden;
+}
+html body .register .register-box .register-button .button-left .shining {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  top: 90%;
+  background: #fff;
+  -webkit-animation: shine 0.8s infinite;
+          animation: shine 0.8s infinite;
+  z-index: 3;
+}
+@-webkit-keyframes shine {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -10%;
+  }
+}
+@keyframes shine {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -10%;
+  }
 }
 html body .register .register-box .register-button .button-left button {
   width: 282px;
@@ -284,12 +312,7 @@ html body .register .register-box .register-button .button-left button {
   border: 1px solid #fffefc;
   -webkit-box-shadow: 1px 3px 4px #000;
           box-shadow: 1px 3px 4px #000;
-}
-html body .register .register-box .register-button .button-left button:hover, html body .register .register-box .register-button .button-left button:active, html body .register .register-box .register-button .button-left button.active {
-  background: -webkit-gradient(linear, right top, left top, from(#a5a5a5), color-stop(31%, #ffffff), color-stop(65%, #ffffff), to(#dadada));
-  background: linear-gradient(to left, #a5a5a5 0%, #ffffff 31%, #ffffff 65%, #dadada 100%);
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
+  position: relative;
 }
 html body .register .register-box .register-button .button-right {
   width: 50%;
@@ -645,10 +668,8 @@ html body main article .main-box .main-btn {
   background-size: 100%;
   position: relative;
   cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
-html body main article .main-box .main-btn:hover, html body main article .main-box .main-btn:active, html body main article .main-box .main-btn.active {
+html body main article .main-box .main-btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-filter: drop-shadow(-1px -2px 3px #fff6b6);
@@ -656,16 +677,45 @@ html body main article .main-box .main-btn:hover, html body main article .main-b
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-html body main article .main-box .main-btn:hover .img, html body main article .main-box .main-btn:active .img, html body main article .main-box .main-btn.active .img {
-  top: -25px;
+html body main article .main-box .main-btn:hover .img {
+  -webkit-animation: swing3 1s ease;
+          animation: swing3 1s ease;
 }
-html body main article .main-box .main-btn:hover h1, html body main article .main-box .main-btn:active h1, html body main article .main-box .main-btn.active h1 {
+@-webkit-keyframes swing3 {
+  15% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+@keyframes swing3 {
+  15% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+html body main article .main-box .main-btn:hover h1 {
   color: #c80aea;
 }
-html body main article .main-box .main-btn:hover h2, html body main article .main-box .main-btn:active h2, html body main article .main-box .main-btn.active h2 {
+html body main article .main-box .main-btn:hover h2 {
   color: #c80aea;
 }
-html body main article .main-box .main-btn:hover p, html body main article .main-box .main-btn:active p, html body main article .main-box .main-btn.active p {
+html body main article .main-box .main-btn:hover p {
   color: #fffed2;
   bottom: 20px;
   text-shadow: 2px 0px 2px #000;
