@@ -648,7 +648,7 @@ html body {
                         transition: 0.3s;
 
                         .img {
-                            animation: flash 0.5s ;
+                           top: -25px;
                         }
 
                         h1 {
@@ -663,7 +663,21 @@ html body {
                             color: #fffed2;
                             bottom: 20px;
                             text-shadow: 2px 0px 2px #000;
+                            font-size: 32px;
                         }
+                    }
+
+                    .main-black,.main-black-2 {
+                        width: 186px;
+                        height: 164px;
+                        background: url(../img/main-btn-black.png) no-repeat;
+                        position: absolute;
+                        margin: 320px 0 0 13px;
+                        z-index: 1;
+                    }
+
+                    .main-black-2 {
+                        z-index: 0;
                     }
 
                     .main-logo {
@@ -680,17 +694,9 @@ html body {
                     .img {
                         width: 212px;
                         height: 380px;
-                        background: url(../img/main-btn-img-2.png) no-repeat;
+                        background: url(../img/main-btn-img.png) no-repeat;
                         position: absolute;
-
-                        @keyframes flash{
-                            from {
-                               top: 5px;
-                            }
-                            to {
-                               top: -20px;
-                            }
-                        }
+                        transition: 0.5s;
                     }
 
                     .img-1 {
@@ -758,6 +764,7 @@ html body {
                         position: relative;
                         margin-top: 420px;
                         text-align: center;
+                        z-index: 2;
                     }
 
                     .triangle {
@@ -768,6 +775,7 @@ html body {
                         position: absolute;
                         bottom: 23px;
                         right: 11px;
+                        z-index: 3;
                     }
                 }
             }
@@ -968,17 +976,6 @@ html body {
             background: linear-gradient(60deg, #ffffff 10%,#ffed8a 30%,#725208 95%,#7b5a33 90%);
             cursor: pointer;
             box-shadow: 0px 1px 7px #fff5ce;
-
-    
-            &:hover,&:active,&.active {
-                background: linear-gradient(6deg, #ffffff 1%, #e2d5b5 30%, #ffed8a 85%, #ffed8a 85%, #ffffff 100%);
-                animation: swing 1s ease;
-                
-                .left-box {
-                    display: block;
-                    pointer-events: visible;
-                }
-            }
     
             .left-img {
                 width: 15px;
@@ -1002,12 +999,13 @@ html body {
                 margin-top: -7px;
                 display: none;
                 pointer-events: none;
-                position: absolute;
+                position: relative;
+                transition: 0.5s;
     
                 .left-box1,
                 .left-box2,
                 .left-box3
-                 {
+                {
                     width: 99px;
                     height: 38px;
                     background: linear-gradient(to top, #2e1a00 16%,#ffe06e 87%);
@@ -1015,6 +1013,9 @@ html body {
                     border: 1px solid #fffcad;
                     margin-top: 9px;
                     cursor: pointer;
+                    position: relative;
+                    transition: 0.4s;
+                    opacity: 0;
     
                     &:hover,&:active,&.active {
                         background: linear-gradient(to bottom, #2e1a00 16%,#ffe06e 87%);
@@ -1048,6 +1049,23 @@ html body {
                 .left-box3 {
                     top: -36px;
                 }
+            }
+        }
+
+        &:hover {
+            .left-circle {
+                background: linear-gradient(6deg, #ffffff 1%, #e2d5b5 30%, #ffed8a 85%, #ffed8a 85%, #ffffff 100%);
+            }
+            
+            .left-box {
+                display: block;
+                pointer-events: visible;
+                
+                .left-box1,.left-box2,.left-box3{
+                    top: 80px;
+                    opacity: 1;
+                }
+
             }
         }
     }
