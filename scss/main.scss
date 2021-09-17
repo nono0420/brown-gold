@@ -997,7 +997,7 @@ html body {
                 width: 100px;
                 height: 150px;
                 margin-top: -7px;
-                display: none;
+                opacity: 0;
                 pointer-events: none;
                 position: relative;
                 transition: 0.5s;
@@ -1011,11 +1011,10 @@ html body {
                     background: linear-gradient(to top, #2e1a00 16%,#ffe06e 87%);
                     border-radius: 10px;
                     border: 1px solid #fffcad;
-                    margin-top: 9px;
+                    margin-top: 5px;
                     cursor: pointer;
                     position: relative;
-                    transition: 0.4s;
-                    opacity: 0;
+                    transition: 0.3s;
     
                     &:hover,&:active,&.active {
                         background: linear-gradient(to bottom, #2e1a00 16%,#ffe06e 87%);
@@ -1039,15 +1038,15 @@ html body {
                 }
 
                 .left-box1{
-                    top: 76px;
+                    top: 10px;
                 }
 
                 .left-box2{
-                    top: 16px;
+                    top: 20px;
                 }
 
                 .left-box3 {
-                    top: -36px;
+                    top: 30px;
                 }
             }
         }
@@ -1058,14 +1057,12 @@ html body {
             }
             
             .left-box {
-                display: block;
                 pointer-events: visible;
-                
+                opacity: 1;
+                transition: 0.5s;
                 .left-box1,.left-box2,.left-box3{
-                    top: 80px;
-                    opacity: 1;
+                    top: 10px;              
                 }
-
             }
         }
     }
