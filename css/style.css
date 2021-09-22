@@ -257,47 +257,19 @@ html body .register .register-box .register-main .register-main-right p:hover, h
 }
 html body .register .register-box .register-button {
   width: 82%;
-  height: 50px;
+  height: 65px;
   border-radius: 15px;
   margin: auto;
 }
 html body .register .register-box .register-button .button-left {
-  width: 50%;
-  height: 100%;
+  width: 282px;
+  height: 65px;
   float: left;
   position: relative;
   overflow: hidden;
 }
-html body .register .register-box .register-button .button-left .shining {
-  position: absolute;
-  height: 20%;
-  width: 100%;
-  top: 90%;
-  background: #ffffff94;
-  -webkit-box-shadow: 4px 0px 12px #fff;
-          box-shadow: 4px 0px 12px #fff;
-  -webkit-animation: shine 0.8s infinite;
-          animation: shine 0.8s infinite;
-  z-index: 3;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  pointer-events: none;
-}
-@-webkit-keyframes shine {
-  0% {
-    top: 0%;
-  }
-  100% {
-    top: 100%;
-  }
-}
-@keyframes shine {
-  0% {
-    top: 0%;
-  }
-  100% {
-    top: 100%;
-  }
+html body .register .register-box .register-button .button-left:hover .shining {
+  opacity: 1;
 }
 html body .register .register-box .register-button .button-left button {
   width: 282px;
@@ -315,37 +287,42 @@ html body .register .register-box .register-button .button-left button {
   text-align: center;
   border-radius: 35px;
   border: 1px solid #fffefc;
-  -webkit-box-shadow: 1px 3px 4px #000;
-          box-shadow: 1px 3px 4px #000;
+  -webkit-box-shadow: 0px 6px 0px #a9a9a9, 0px 8px 7px #000;
+          box-shadow: 0px 6px 0px #a9a9a9, 0px 8px 7px #000;
   position: relative;
+  overflow: hidden;
 }
 html body .register .register-box .register-button .button-left button:hover, html body .register .register-box .register-button .button-left button:active, html body .register .register-box .register-button .button-left button.active {
   background: -webkit-gradient(linear, right top, left top, from(#a5a5a5), color-stop(31%, #ffffff), color-stop(65%, #ffffff), to(#dadada));
   background: linear-gradient(to left, #a5a5a5 0%, #ffffff 31%, #ffffff 65%, #dadada 100%);
+  -webkit-box-shadow: 1px 3px 4px #000;
+          box-shadow: 1px 3px 4px #000;
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
 }
-html body .register .register-box .register-button .button-right {
-  width: 50%;
-  height: 100%;
-  float: left;
-  position: relative;
-  overflow: hidden;
-}
-html body .register .register-box .register-button .button-right .shining {
+html body .register .register-box .register-button .button-left button .shining {
   position: absolute;
   height: 20%;
   width: 100%;
   top: 90%;
-  background: #fff4bd87;
-  -webkit-box-shadow: 4px 0px 12px #fff8e0;
-          box-shadow: 4px 0px 12px #fff8e0;
+  background: #ffffff94;
+  -webkit-box-shadow: 4px 0px 12px #fff;
+          box-shadow: 4px 0px 12px #fff;
   -webkit-animation: shine 0.8s infinite;
           animation: shine 0.8s infinite;
   z-index: 3;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   pointer-events: none;
+  opacity: 0;
+}
+@-webkit-keyframes shine {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
 }
 @keyframes shine {
   0% {
@@ -354,6 +331,16 @@ html body .register .register-box .register-button .button-right .shining {
   100% {
     top: 100%;
   }
+}
+html body .register .register-box .register-button .button-right {
+  width: 282px;
+  height: 65px;
+  float: right;
+  position: relative;
+  overflow: hidden;
+}
+html body .register .register-box .register-button .button-right:hover .shining {
+  opacity: 1;
 }
 html body .register .register-box .register-button .button-right button {
   width: 282px;
@@ -372,15 +359,42 @@ html body .register .register-box .register-button .button-right button {
   text-align: center;
   border-radius: 35px;
   border: 1px solid #ffe25c;
-  -webkit-box-shadow: 1px 3px 4px #000;
-          box-shadow: 1px 3px 4px #000;
+  -webkit-box-shadow: 0px 6px 0px #7d5a18, 0px 8px 7px #000;
+          box-shadow: 0px 6px 0px #7d5a18, 0px 8px 7px #000;
   position: relative;
+  overflow: hidden;
 }
 html body .register .register-box .register-button .button-right button:hover, html body .register .register-box .register-button .button-right button:active, html body .register .register-box .register-button .button-right button.active {
   background: -webkit-gradient(linear, right top, left top, from(#ebca69), color-stop(62%, #ffef9b), to(#c5b055));
   background: linear-gradient(to left, #ebca69 0%, #ffef9b 62%, #c5b055 100%);
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
+  -webkit-box-shadow: 1px 3px 4px #000;
+          box-shadow: 1px 3px 4px #000;
+}
+html body .register .register-box .register-button .button-right button .shining {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  top: 90%;
+  background: #fff5c387;
+  -webkit-box-shadow: 4px 0px 21px #fff8e0;
+          box-shadow: 4px 0px 21px #fff8e0;
+  -webkit-animation: shine 0.8s infinite;
+          animation: shine 0.8s infinite;
+  z-index: 3;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  pointer-events: none;
+  opacity: 0;
+}
+@keyframes shine {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
 }
 html body header {
   width: 100%;
