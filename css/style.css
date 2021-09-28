@@ -734,8 +734,8 @@ html body main article .main-box .main-btn {
   cursor: pointer;
 }
 html body main article .main-box .main-btn:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-filter: drop-shadow(-1px -2px 3px #fff6b6);
           filter: drop-shadow(-1px -2px 3px #fff6b6);
   -webkit-transition: 0.3s;
