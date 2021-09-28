@@ -152,7 +152,6 @@ html body {
                     .check-box {
                         width: 290px;
                         height: auto;
-                        // background: mediumaquamarine;
                         top: 5px;
                         float: right;
                         position: relative;
@@ -259,6 +258,7 @@ html body {
                             background: linear-gradient(to left, #a5a5a5 0%,#ffffff 31%,#ffffff 65%,#dadada 100%);
                             box-shadow: 1px 3px 4px #000;
                             filter: brightness(1.1);
+                            margin-top: 3px;
                         }
 
                         .shining {
@@ -325,6 +325,7 @@ html body {
                             background: linear-gradient(to left, #ebca69 0%,#ffef9b 62%,#c5b055 100%);
                             filter: brightness(1.1);
                             box-shadow: 1px 3px 4px #000;
+                            margin-top: 3px;
                         }
 
                         .shining {
@@ -445,6 +446,16 @@ html body {
                             //         display: block;
                             //     }
                             // }
+                        }
+
+                        .sign-in {
+                            background: linear-gradient(to bottom,#e6ffd9 -6%, #3ace00 25%, #0f8100 86%,#f8ffd3 103%);
+                            border: 1px solid #d8ff94;
+
+                            &:hover,&:active,&.active {
+                                background: linear-gradient(to top, #ffddff 0%, #f717ff 30%, #a000ce 55%, #a000ce 85%, #ffd6fc 100%);
+                                border: 1px solid #dc3aff;
+                            }
                         }
 
                         .forget {

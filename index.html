@@ -46,7 +46,7 @@
                         <div class="shining"></div>
                     </button>
                 </div>
-                <div class="button-right">
+                <div class="button-right" onclick="myFunction()">
                     <button>註冊
                         <div class="shining"></div>
                     </button>
@@ -299,6 +299,16 @@
             $('.register').removeClass('display');
         })
     })
+
+    $(function(){
+        $('.button-left').click(function(){
+            $('.register').removeClass('display');
+        })
+    })
+
+    function myFunction(){
+	alert("登入成功！");
+    }
 </script>
 </body>
 </html>
