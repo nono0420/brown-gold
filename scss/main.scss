@@ -732,13 +732,13 @@ html body {
 
                             @keyframes swing3 {
                                 15% {
-                                    transform: translateY(5px);
+                                    transform: translateY(5px) scale(1.2);
                                 }
-                                30% {
+                                40% {
                                     transform: translateY(-5px);
                                 }
                                 50% {
-                                    transform: translateY(5px);
+                                    transform: translateY(0px);
                                 }
                             }
                         }

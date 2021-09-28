@@ -747,30 +747,30 @@ html body main article .main-box .main-btn:hover .img {
 }
 @-webkit-keyframes swing3 {
   15% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(5px) scale(1.2);
+            transform: translateY(5px) scale(1.2);
   }
-  30% {
+  40% {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
   }
   50% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 @keyframes swing3 {
   15% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(5px) scale(1.2);
+            transform: translateY(5px) scale(1.2);
   }
-  30% {
+  40% {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
   }
   50% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 html body main article .main-box .main-btn:hover h1 {
