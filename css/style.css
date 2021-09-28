@@ -478,9 +478,8 @@ html body header article .header-1 .header-top-bg .input-box button {
   margin-left: 6px;
 }
 html body header article .header-1 .header-top-bg .input-box button:hover, html body header article .header-1 .header-top-bg .input-box button:active, html body header article .header-1 .header-top-bg .input-box button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(-1%, #3cd500), color-stop(96%, #0f8100), to(#f9ffdb));
-  background: linear-gradient(to top, #3cd500 -1%, #0f8100 96%, #f9ffdb 100%);
-  border: 1px solid #d8ff94;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffddff), color-stop(30%, #f717ff), color-stop(55%, #a000ce), color-stop(85%, #a000ce), to(#ffd6fc));
+  background: linear-gradient(to top, #ffddff 0%, #f717ff 30%, #a000ce 55%, #a000ce 85%, #ffd6fc 100%);
 }
 html body header article .header-1 .header-top-bg .input-box .sign-in {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-6%, #e6ffd9), color-stop(25%, #3ace00), color-stop(86%, #0f8100), color-stop(103%, #f8ffd3));
@@ -488,9 +487,8 @@ html body header article .header-1 .header-top-bg .input-box .sign-in {
   border: 1px solid #d8ff94;
 }
 html body header article .header-1 .header-top-bg .input-box .sign-in:hover, html body header article .header-1 .header-top-bg .input-box .sign-in:active, html body header article .header-1 .header-top-bg .input-box .sign-in.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffddff), color-stop(30%, #f717ff), color-stop(55%, #a000ce), color-stop(85%, #a000ce), to(#ffd6fc));
-  background: linear-gradient(to top, #ffddff 0%, #f717ff 30%, #a000ce 55%, #a000ce 85%, #ffd6fc 100%);
-  border: 1px solid #dc3aff;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-6%, #e6ffd9), color-stop(25%, #3ace00), color-stop(86%, #0f8100), color-stop(103%, #f8ffd3));
+  background: linear-gradient(to top, #e6ffd9 -6%, #3ace00 25%, #0f8100 86%, #f8ffd3 103%);
 }
 html body header article .header-1 .header-top-bg .input-box .forget {
   width: 104px;
@@ -711,6 +709,7 @@ html body main article .news .news-box marquee {
   color: #fff6b6;
   line-height: 35px;
   float: right;
+  font-size: 15px;
 }
 html body main article .main-box {
   width: 100%;

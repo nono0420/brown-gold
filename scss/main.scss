@@ -437,8 +437,7 @@ html body {
                             margin-left: 6px;
 
                             &:hover,&:active,&.active {
-                                background: linear-gradient(to top,#3cd500 -1%, #0f8100 96%, #f9ffdb 100%);
-                                border: 1px solid #d8ff94;
+                                background: linear-gradient(to top, #ffddff 0%, #f717ff 30%, #a000ce 55%, #a000ce 85%, #ffd6fc 100%);
                             }
 
                             // .registered {
@@ -453,8 +452,7 @@ html body {
                             border: 1px solid #d8ff94;
 
                             &:hover,&:active,&.active {
-                                background: linear-gradient(to top, #ffddff 0%, #f717ff 30%, #a000ce 55%, #a000ce 85%, #ffd6fc 100%);
-                                border: 1px solid #dc3aff;
+                                background: linear-gradient(to top,#e6ffd9 -6%, #3ace00 25%, #0f8100 86%,#f8ffd3 103%);
                             }
                         }
 
@@ -701,6 +699,7 @@ html body {
                         color: #fff6b6;
                         line-height: 35px;
                         float: right;
+                        font-size: 15px;
                     }
                 }
             }
